@@ -14,8 +14,8 @@
 		BFD7A0061B0E247600DD4346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0051B0E247600DD4346 /* Images.xcassets */; };
 		BFD7A0091B0E247600DD4346 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0071B0E247600DD4346 /* LaunchScreen.xib */; };
 		BFD7A0151B0E247600DD4346 /* makers_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A0141B0E247600DD4346 /* makers_appTests.swift */; };
-		BFD7A01F1B0E26A100DD4346 /* eyeTest.matchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A01E1B0E26A100DD4346 /* eyeTest.matchers.js */; };
 		BFD7A0211B0E26C100DD4346 /* makersAppFeatureTests.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */; };
+		BFD7A0231B0E2D9800DD4346 /* eyeTest.matchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,8 @@
 		BFD7A00E1B0E247600DD4346 /* makers-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "makers-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD7A0131B0E247600DD4346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD7A0141B0E247600DD4346 /* makers_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makers_appTests.swift; sourceTree = "<group>"; };
-		BFD7A01E1B0E26A100DD4346 /* eyeTest.matchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = eyeTest.matchers.js; path = ../../../../programs/eyeTest/Masters/eyeTest.matchers.js; sourceTree = "<group>"; };
 		BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = makersAppFeatureTests.js; sourceTree = "<group>"; };
+		BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTest.matchers.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		BFD7A0121B0E247600DD4346 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFD7A01E1B0E26A100DD4346 /* eyeTest.matchers.js */,
+				BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */,
 				BFD7A0131B0E247600DD4346 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0211B0E26C100DD4346 /* makersAppFeatureTests.js in Resources */,
-				BFD7A01F1B0E26A100DD4346 /* eyeTest.matchers.js in Resources */,
+				BFD7A0231B0E2D9800DD4346 /* eyeTest.matchers.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
