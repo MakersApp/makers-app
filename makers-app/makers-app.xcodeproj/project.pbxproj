@@ -83,7 +83,6 @@
 		BFD79FF81B0E247600DD4346 /* makers-app */ = {
 			isa = PBXGroup;
 			children = (
-				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
 				BFD7A0021B0E247600DD4346 /* Main.storyboard */,
 				BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */,
@@ -95,6 +94,7 @@
 		BFD79FF91B0E247600DD4346 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0051B0E247600DD4346 /* Images.xcassets */,
 				BFD7A0071B0E247600DD4346 /* LaunchScreen.xib */,
 				BFD79FFA1B0E247600DD4346 /* Info.plist */,
