@@ -40,14 +40,18 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3v7-Rl-IPB" kind="show" id="meW-Kr-K4T"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="TYk-Er-c2q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2UM-Eh-8xU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VXc-nx-YCZ" secondAttribute="trailing" constant="44" id="2Uw-j0-b0Y"/>
                             <constraint firstItem="zDo-KT-fm3" firstAttribute="top" secondItem="5CW-Xy-nkr" secondAttribute="bottom" constant="15" id="FeB-c5-aQJ"/>
                             <constraint firstItem="zDo-KT-fm3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I2g-Kp-kSw"/>
+                            <constraint firstItem="TYk-Er-c2q" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="KvI-mK-w1S"/>
                             <constraint firstItem="5CW-Xy-nkr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RpB-GQ-Xh4"/>
                             <constraint firstItem="5CW-Xy-nkr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="152" id="i2F-vg-Zwo"/>
                             <constraint firstItem="TYk-Er-c2q" firstAttribute="top" secondItem="VXc-nx-YCZ" secondAttribute="bottom" constant="52" id="m1d-VE-aWj"/>
@@ -58,9 +62,47 @@
                             <constraint firstItem="zDo-KT-fm3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="yFB-a9-oHP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameInput" destination="VXc-nx-YCZ" id="LGy-ty-3f2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="349" y="375"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="PQo-Px-MiK">
+            <objects>
+                <viewController id="3v7-Rl-IPB" customClass="MainViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4kx-Lu-pAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="6m8-5m-5eI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="THd-Hf-fZE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ7-hh-uDZ">
+                                <rect key="frame" x="16" y="186" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xZ7-hh-uDZ" firstAttribute="trailing" secondItem="THd-Hf-fZE" secondAttribute="trailingMargin" id="H43-JC-0Jn"/>
+                            <constraint firstItem="xZ7-hh-uDZ" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" id="HqI-bI-Oky"/>
+                            <constraint firstItem="xZ7-hh-uDZ" firstAttribute="top" secondItem="4kx-Lu-pAu" secondAttribute="bottom" constant="166" id="u5g-bI-t7w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingText" destination="xZ7-hh-uDZ" id="b6L-ll-OSr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUr-8L-FkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="375"/>
         </scene>
     </scenes>
 </document>

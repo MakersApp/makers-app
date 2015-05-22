@@ -3,10 +3,32 @@ var target = UIATarget.localTarget();
 var view = target.frontMostApp().mainWindow();
 var currentTest;
 var failuresFound = false;
+var currentItBlock;
+var failuresFoundInItBlock;
+var beVerbose
+
+function describe(testDescription, testCode, verbose) {
+    beVerbose = !!verbose
+    currentTest = testDescription
+    beginTest(testDescription);
+    testCode.call();
+    endTest();
+}
+
+function it(testDescription, testCode) {
+    currentItBlock = testDescription;
+    failuresFoundInItBlock = false;
+    if (beVerbose) { UIALogger.logMessage("____Test: " + currentItBlock); }
+    testCode.call();
+    if (failuresFoundInItBlock) {
+        UIALogger.logFail("____Failed: " + currentItBlock);
+    } else {
+        if (beVerbose) { UIALogger.logPass("____Passed: " + currentItBlock); }
+    }
+}
 
 function beginTest(testDescription, target) {
-    currentTest = testDescription;
-    UIALogger.logDebug("BEGIN TEST ***** " + testDescription + " *****")
+    UIALogger.logMessage("BEGIN TEST ***** " + testDescription + " *****")
 }
 
 function endTest() {
@@ -18,7 +40,7 @@ function endTest() {
 }
 
 function testPass(passString) {
-    UIALogger.logPass("______PASS: " + passString);
+    if (beVerbose) { UIALogger.logPass("______PASS: " + passString); }
 }
 
 function testFailure(failString) {

@@ -10,10 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameInput: UITextField!
+    let requestURLBase = "http://makersvisitorapi.herokuapp.com/users/"
+    
+    var userName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func submitButton() {
+        let httpManager = HttpManager()
+        httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text], callBack: processResponse)
+    }
+    
+    func processResponse(responseData: String) {
+        
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var mainViewController = segue.destinationViewController as! MainViewController
+        mainViewController.userName = nameInput.text
+    }
 }
 

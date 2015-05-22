@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */; };
 		BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */; };
 		BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */; };
 		BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A0001B0E247600DD4346 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		BFD7A0151B0E247600DD4346 /* makers_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A0141B0E247600DD4346 /* makers_appTests.swift */; };
 		BFD7A0211B0E26C100DD4346 /* makersAppFeatureTests.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */; };
 		BFD7A0231B0E2D9800DD4346 /* eyeTest.matchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */; };
+		BFD7A0251B0E394A00DD4346 /* ma.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0241B0E394A00DD4346 /* ma.png */; };
+		BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0261B0E3A3200DD4346 /* ma2.png */; };
+		BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A02A1B0E480100DD4346 /* MainViewController.swift */; };
+		E7C1FA671270706B1C24FF2F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0153830F358054F1E3F3642 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B0153830F358054F1E3F3642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		BFD79FF61B0E247600DD4346 /* makers-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "makers-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD79FFA1B0E247600DD4346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,10 @@
 		BFD7A0141B0E247600DD4346 /* makers_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makers_appTests.swift; sourceTree = "<group>"; };
 		BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = makersAppFeatureTests.js; sourceTree = "<group>"; };
 		BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTest.matchers.js; sourceTree = "<group>"; };
+		BFD7A0241B0E394A00DD4346 /* ma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma.png; path = Images.xcassets/ma.png; sourceTree = "<group>"; };
+		BFD7A0261B0E3A3200DD4346 /* ma2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma2.png; path = Images.xcassets/ma2.png; sourceTree = "<group>"; };
+		BFD7A02A1B0E480100DD4346 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE0AFF9A2F36E4834BCD5F2F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C1FA671270706B1C24FF2F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71CD723F2460D449F43FDA93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */,
+				EE0AFF9A2F36E4834BCD5F2F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94427E2A5191068DE13FEA44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0153830F358054F1E3F3642 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFD79FED1B0E247500DD4346 = {
 			isa = PBXGroup;
 			children = (
 				BFD79FF81B0E247600DD4346 /* makers-app */,
 				BFD7A0111B0E247600DD4346 /* makers-appTests */,
 				BFD79FF71B0E247600DD4346 /* Products */,
+				71CD723F2460D449F43FDA93 /* Pods */,
+				94427E2A5191068DE13FEA44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,9 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
+				BFD7A02A1B0E480100DD4346 /* MainViewController.swift */,
 				BFD7A0021B0E247600DD4346 /* Main.storyboard */,
 				BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */,
 				BFD79FF91B0E247600DD4346 /* Supporting Files */,
+				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -96,6 +130,8 @@
 			children = (
 				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0051B0E247600DD4346 /* Images.xcassets */,
+				BFD7A0261B0E3A3200DD4346 /* ma2.png */,
+				BFD7A0241B0E394A00DD4346 /* ma.png */,
 				BFD7A0071B0E247600DD4346 /* LaunchScreen.xib */,
 				BFD79FFA1B0E247600DD4346 /* Info.plist */,
 			);
@@ -128,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFD7A0181B0E247600DD4346 /* Build configuration list for PBXNativeTarget "makers-app" */;
 			buildPhases = (
+				13B08A9C7D30CAD53E63C8CE /* Check Pods Manifest.lock */,
 				BFD79FF21B0E247600DD4346 /* Sources */,
 				BFD79FF31B0E247600DD4346 /* Frameworks */,
 				BFD79FF41B0E247600DD4346 /* Resources */,
+				C5AA787C97F4044B2715BEF5 /* Embed Pods Frameworks */,
+				2A62EAD577EC0CFDC434AE70 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,8 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0041B0E247600DD4346 /* Main.storyboard in Resources */,
+				BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */,
 				BFD7A0091B0E247600DD4346 /* LaunchScreen.xib in Resources */,
 				BFD7A0061B0E247600DD4346 /* Images.xcassets in Resources */,
+				BFD7A0251B0E394A00DD4346 /* ma.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,14 +259,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13B08A9C7D30CAD53E63C8CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A62EAD577EC0CFDC434AE70 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AA787C97F4044B2715BEF5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFD79FF21B0E247600DD4346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
+				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
+				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +441,7 @@
 		};
 		BFD7A0191B0E247600DD4346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "makers-app/Info.plist";
@@ -360,6 +452,7 @@
 		};
 		BFD7A01A1B0E247600DD4346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE0AFF9A2F36E4834BCD5F2F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "makers-app/Info.plist";
