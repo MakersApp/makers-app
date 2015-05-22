@@ -20,12 +20,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submitButton() {
+        println(nameInput.text)
         let httpManager = HttpManager()
         httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text], callBack: processResponse)
     }
     
     func processResponse(responseData: String) {
-        
+        performSegueWithIdentifier("showWelcomePage", sender: nil)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
