@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var greetingText: UILabel!
     var userName: String!
+    var teamMember: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,14 @@ class MainViewController: UIViewController {
     }
     
 
+    @IBAction func nameSelect(sender: UIButton) {
+        teamMember = sender.currentTitle
+        if (teamMember == "I don't know!") {
+            teamMember = "unknown"
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

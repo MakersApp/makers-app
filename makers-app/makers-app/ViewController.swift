@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submitButton() {
-        println(nameInput.text)
         let httpManager = HttpManager()
         httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text], callBack: processResponse)
     }

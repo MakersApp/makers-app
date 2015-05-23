@@ -42,6 +42,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Aq3-cC-C57"/>
+                                    <segue destination="3v7-Rl-IPB" kind="show" identifier="showWelcomePage" id="MXR-7M-zRm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,19 +83,140 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ7-hh-uDZ">
-                                <rect key="frame" x="16" y="186" width="568" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi [name]!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ7-hh-uDZ">
+                                <rect key="frame" x="16" y="81" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you coming to see?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig6-b0-4PP">
+                                <rect key="frame" x="16" y="150" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-P9-qDI">
+                                <rect key="frame" x="188" y="226" width="225" height="30"/>
+                                <state key="normal" title="Nikesh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Gng-az-L6x"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="cKe-K3-qzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-2X-uY3">
+                                <rect key="frame" x="188" y="264" width="225" height="30"/>
+                                <state key="normal" title="Arfah">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="HN7-BN-AEk"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="k6g-tn-0jD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-sO-40u">
+                                <rect key="frame" x="188" y="302" width="225" height="30"/>
+                                <state key="normal" title="Will">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Nsp-pl-txM"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="mJE-G9-3zr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKc-x3-zdH">
+                                <rect key="frame" x="188" y="340" width="225" height="30"/>
+                                <state key="normal" title="Evgeny">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="MkI-rG-fCA"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Vbe-ui-14h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHK-i5-vNb">
+                                <rect key="frame" x="188" y="378" width="225" height="30"/>
+                                <state key="normal" title="Spike">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="4bF-uo-RCU"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="hZO-LZ-lhu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAw-pz-0Np">
+                                <rect key="frame" x="188" y="416" width="225" height="30"/>
+                                <state key="normal" title="Ruben">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="QWU-SF-ZmJ"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Mgu-ea-cxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exM-Ak-ryN">
+                                <rect key="frame" x="188" y="454" width="225" height="30"/>
+                                <state key="normal" title="Jordan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="H1f-Of-uFP"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="tYT-YX-7x1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omD-5f-GsJ">
+                                <rect key="frame" x="188" y="492" width="225" height="30"/>
+                                <state key="normal" title="I don't know!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="iDM-fO-Y9b"/>
+                                    <action selector="nameSelection:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="hjn-Vb-hFV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ig6-b0-4PP" firstAttribute="trailing" secondItem="THd-Hf-fZE" secondAttribute="trailingMargin" id="6Wq-gr-hT7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jcg-2X-uY3" secondAttribute="trailing" constant="171" id="8S3-nU-47T"/>
+                            <constraint firstItem="omD-5f-GsJ" firstAttribute="top" secondItem="exM-Ak-ryN" secondAttribute="bottom" constant="8" id="Erb-3o-Sk4"/>
+                            <constraint firstItem="LAw-pz-0Np" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="FBs-pG-dMF"/>
                             <constraint firstItem="xZ7-hh-uDZ" firstAttribute="trailing" secondItem="THd-Hf-fZE" secondAttribute="trailingMargin" id="H43-JC-0Jn"/>
                             <constraint firstItem="xZ7-hh-uDZ" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" id="HqI-bI-Oky"/>
+                            <constraint firstItem="Jcg-2X-uY3" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="J6O-21-GXy"/>
+                            <constraint firstItem="omD-5f-GsJ" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="KLo-SM-Vba"/>
+                            <constraint firstItem="VCr-P9-qDI" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="Kzs-wP-NGz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="omD-5f-GsJ" secondAttribute="trailing" constant="171" id="Luk-H8-eTY"/>
+                            <constraint firstItem="ig6-b0-4PP" firstAttribute="top" secondItem="4kx-Lu-pAu" secondAttribute="bottom" constant="130" id="ZWb-xw-Qdo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VCr-P9-qDI" secondAttribute="trailing" constant="171" id="aS5-IU-SkH"/>
+                            <constraint firstItem="UKc-x3-zdH" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="cea-4c-nGB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LAw-pz-0Np" secondAttribute="trailing" constant="171" id="dTy-AS-VLI"/>
+                            <constraint firstItem="LAw-pz-0Np" firstAttribute="top" secondItem="oHK-i5-vNb" secondAttribute="bottom" constant="8" id="f3Z-yk-jVx"/>
+                            <constraint firstItem="xZ7-hh-uDZ" firstAttribute="top" secondItem="4kx-Lu-pAu" secondAttribute="bottom" constant="61" id="gmP-Cc-Rmu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UKc-x3-zdH" secondAttribute="trailing" constant="171" id="gu4-9I-cOF"/>
+                            <constraint firstItem="oHK-i5-vNb" firstAttribute="top" secondItem="UKc-x3-zdH" secondAttribute="bottom" constant="8" id="hTa-3Q-tag"/>
+                            <constraint firstItem="ig6-b0-4PP" firstAttribute="top" secondItem="xZ7-hh-uDZ" secondAttribute="bottom" constant="36" id="kNz-az-FlA"/>
+                            <constraint firstItem="Jcg-2X-uY3" firstAttribute="top" secondItem="VCr-P9-qDI" secondAttribute="bottom" constant="8" id="mRa-oa-3qz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oHK-i5-vNb" secondAttribute="trailing" constant="171" id="md7-gC-Lx6"/>
+                            <constraint firstItem="exM-Ak-ryN" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="nUP-R9-gPi"/>
+                            <constraint firstItem="oHK-i5-vNb" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="nop-vG-ZUs"/>
+                            <constraint firstItem="ig6-b0-4PP" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" id="r66-AC-uMA"/>
+                            <constraint firstItem="6m8-5m-5eI" firstAttribute="top" secondItem="omD-5f-GsJ" secondAttribute="bottom" constant="78" id="tDJ-aA-Yt2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Zc-sO-40u" secondAttribute="trailing" constant="171" id="tUo-EJ-VKD"/>
                             <constraint firstItem="xZ7-hh-uDZ" firstAttribute="top" secondItem="4kx-Lu-pAu" secondAttribute="bottom" constant="166" id="u5g-bI-t7w"/>
+                            <constraint firstItem="UKc-x3-zdH" firstAttribute="top" secondItem="1Zc-sO-40u" secondAttribute="bottom" constant="8" id="uBd-Fw-mzZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="exM-Ak-ryN" secondAttribute="trailing" constant="171" id="vSt-Db-jNo"/>
+                            <constraint firstItem="1Zc-sO-40u" firstAttribute="leading" secondItem="THd-Hf-fZE" secondAttribute="leadingMargin" constant="172" id="w7f-F9-DvU"/>
+                            <constraint firstItem="exM-Ak-ryN" firstAttribute="top" secondItem="LAw-pz-0Np" secondAttribute="bottom" constant="8" id="x7R-94-L0C"/>
+                            <constraint firstItem="1Zc-sO-40u" firstAttribute="top" secondItem="Jcg-2X-uY3" secondAttribute="bottom" constant="8" id="xpo-zR-hyP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="u5g-bI-t7w"/>
+                                <exclude reference="kNz-az-FlA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="greetingText" destination="xZ7-hh-uDZ" id="b6L-ll-OSr"/>
