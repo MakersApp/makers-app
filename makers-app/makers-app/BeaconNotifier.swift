@@ -14,6 +14,7 @@ class BeaconNotifier: NSObject, ESTBeaconManagerDelegate {
     var hasArrived = false
     var isAboutToLeave = false
     var hasLeft = false
+//    let cll = CLLocationManager()
     
     let beaconRegion = CLBeaconRegion(
         proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
@@ -22,8 +23,18 @@ class BeaconNotifier: NSObject, ESTBeaconManagerDelegate {
     override init() {
         super.init()
         bManager.delegate = self
+    }
+    
+    func requestPermissions() {
+//        cll.pausesLocationUpdatesAutomatically = false
+        bManager.requestAlwaysAuthorization()
         bManager.avoidUnknownStateBeacons = true
         bManager.startMonitoringForRegion(beaconRegion)
+    }
+    
+    func bManager(manager: ESTBeaconManager,
+        didEnterRegion region: [CLBeaconRegion]) {
+        println("sucess")
     }
     
     func didEnterRegion() {
