@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */; };
+		BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F39051B10B6D400CAECB3 /* OkViewController.swift */; };
+		BF7F39081B10D1DF00CAECB3 /* eyeTestMatchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */; };
 		BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */; };
 		BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */; };
 		BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A0001B0E247600DD4346 /* ViewController.swift */; };
@@ -16,10 +18,13 @@
 		BFD7A0091B0E247600DD4346 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0071B0E247600DD4346 /* LaunchScreen.xib */; };
 		BFD7A0151B0E247600DD4346 /* makers_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A0141B0E247600DD4346 /* makers_appTests.swift */; };
 		BFD7A0211B0E26C100DD4346 /* makersAppFeatureTests.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */; };
-		BFD7A0231B0E2D9800DD4346 /* eyeTest.matchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */; };
 		BFD7A0251B0E394A00DD4346 /* ma.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0241B0E394A00DD4346 /* ma.png */; };
 		BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0261B0E3A3200DD4346 /* ma2.png */; };
 		BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A02A1B0E480100DD4346 /* MainViewController.swift */; };
+		BFE9BA741B11DB9E00885EF2 /* BeaconNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */; };
+		BFE9BA761B11E0D500885EF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA751B11E0D500885EF2 /* CoreLocation.framework */; };
+		BFE9BA781B11E0DB00885EF2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA771B11E0DB00885EF2 /* CoreBluetooth.framework */; };
+		BFE9BA7C1B11E18500885EF2 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA7B1B11E18500885EF2 /* EstimoteSDK.framework */; };
 		E7C1FA671270706B1C24FF2F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0153830F358054F1E3F3642 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,8 @@
 		020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0153830F358054F1E3F3642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		BF7F39051B10B6D400CAECB3 /* OkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OkViewController.swift; sourceTree = "<group>"; };
+		BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTestMatchers.js; sourceTree = "<group>"; };
 		BFD79FF61B0E247600DD4346 /* makers-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "makers-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD79FFA1B0E247600DD4346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +56,15 @@
 		BFD7A0131B0E247600DD4346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD7A0141B0E247600DD4346 /* makers_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makers_appTests.swift; sourceTree = "<group>"; };
 		BFD7A0201B0E26C100DD4346 /* makersAppFeatureTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = makersAppFeatureTests.js; sourceTree = "<group>"; };
-		BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTest.matchers.js; sourceTree = "<group>"; };
 		BFD7A0241B0E394A00DD4346 /* ma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma.png; path = Images.xcassets/ma.png; sourceTree = "<group>"; };
 		BFD7A0261B0E3A3200DD4346 /* ma2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma2.png; path = Images.xcassets/ma2.png; sourceTree = "<group>"; };
 		BFD7A02A1B0E480100DD4346 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconNotifier.swift; sourceTree = "<group>"; };
+		BFE9BA751B11E0D500885EF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFE9BA771B11E0DB00885EF2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BFE9BA791B11E13400885EF2 /* EstimoteSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = EstimoteSDK; path = Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework/Versions/A/EstimoteSDK; sourceTree = "<group>"; };
+		BFE9BA7B1B11E18500885EF2 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
+		BFE9BA7D1B11E2BE00885EF2 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		EE0AFF9A2F36E4834BCD5F2F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE9BA7C1B11E18500885EF2 /* EstimoteSDK.framework in Frameworks */,
+				BFE9BA781B11E0DB00885EF2 /* CoreBluetooth.framework in Frameworks */,
+				BFE9BA761B11E0D500885EF2 /* CoreLocation.framework in Frameworks */,
 				E7C1FA671270706B1C24FF2F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +102,10 @@
 		94427E2A5191068DE13FEA44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFE9BA7B1B11E18500885EF2 /* EstimoteSDK.framework */,
+				BFE9BA791B11E13400885EF2 /* EstimoteSDK */,
+				BFE9BA771B11E0DB00885EF2 /* CoreBluetooth.framework */,
+				BFE9BA751B11E0D500885EF2 /* CoreLocation.framework */,
 				B0153830F358054F1E3F3642 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -117,10 +136,12 @@
 			children = (
 				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
 				BFD7A02A1B0E480100DD4346 /* MainViewController.swift */,
+				BF7F39051B10B6D400CAECB3 /* OkViewController.swift */,
 				BFD7A0021B0E247600DD4346 /* Main.storyboard */,
 				BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */,
 				BFD79FF91B0E247600DD4346 /* Supporting Files */,
 				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
+				BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -128,6 +149,7 @@
 		BFD79FF91B0E247600DD4346 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFE9BA7D1B11E2BE00885EF2 /* ObjCBridge.h */,
 				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0051B0E247600DD4346 /* Images.xcassets */,
 				BFD7A0261B0E3A3200DD4346 /* ma2.png */,
@@ -151,7 +173,7 @@
 		BFD7A0121B0E247600DD4346 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFD7A0221B0E2D9800DD4346 /* eyeTest.matchers.js */,
+				BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */,
 				BFD7A0131B0E247600DD4346 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -253,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0211B0E26C100DD4346 /* makersAppFeatureTests.js in Resources */,
-				BFD7A0231B0E2D9800DD4346 /* eyeTest.matchers.js in Resources */,
+				BF7F39081B10D1DF00CAECB3 /* eyeTestMatchers.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,9 +336,11 @@
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
+				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
+				BFE9BA741B11DB9E00885EF2 /* BeaconNotifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,9 +468,19 @@
 			baseConfigurationReference = 020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",
+				);
 				INFOPLIST_FILE = "makers-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "makers-app/ObjCBridge.h";
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
 		};
@@ -454,10 +488,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE0AFF9A2F36E4834BCD5F2F /* Pods.release.xcconfig */;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",
+				);
 				INFOPLIST_FILE = "makers-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "makers-app/ObjCBridge.h";
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Release;
 		};

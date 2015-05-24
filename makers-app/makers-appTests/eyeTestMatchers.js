@@ -18,24 +18,24 @@ function describe(testDescription, testCode, verbose) {
 function it(testDescription, testCode) {
     currentItBlock = testDescription;
     failuresFoundInItBlock = false;
-    if (beVerbose) { UIALogger.logMessage("____Test: " + currentItBlock); }
+    if (beVerbose) { UIALogger.logMessage("___Test: " + currentItBlock); }
     testCode.call();
     if (failuresFoundInItBlock) {
-        UIALogger.logFail("____Failed: " + currentItBlock);
+        UIALogger.logFail("___Failed: " + currentItBlock);
     } else {
-        if (beVerbose) { UIALogger.logPass("____Passed: " + currentItBlock); }
+        if (beVerbose) { UIALogger.logPass("___Passed: " + currentItBlock); }
     }
 }
 
 function beginTest(testDescription, target) {
-    UIALogger.logMessage("BEGIN TEST ***** " + testDescription + " *****")
+    UIALogger.logMessage("BEGIN TEST ***** " + testDescription + " *****");
 }
 
 function endTest() {
     if (failuresFound) {
-        UIALogger.logFail("TEST FAILED ***** " + currentTest + " *****")
+        UIALogger.logFail("TEST FAILED ***** " + currentTest + " *****");
     } else {
-        UIALogger.logPass("TEST PASSED ***** " + currentTest + " *****")
+        UIALogger.logPass("TEST PASSED ***** " + currentTest + " *****");
     }
 }
 
@@ -44,11 +44,12 @@ function testPass(passString) {
 }
 
 function testFailure(failString) {
-    failuresFound = true
+    failuresFound = true;
+    failuresFoundInItBlock = true;
     UIALogger.logFail("______FAIL: " + failString);
 }
 
-function checkViewContainsText(text) {
+function readText(text) {
     if (view.staticTexts()[text].isValid()) {
         testPass("Found text '" + text + "'");
     } else {

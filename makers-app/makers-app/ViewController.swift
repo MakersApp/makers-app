@@ -11,17 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var nameInput: UITextField!
-    let requestURLBase = "http://makersvisitorapi.herokuapp.com/users/"
+    var httpManager: HttpManager!
+    var requestURLBase: String!
+    var deviceID: String!
     
     var userName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        httpManager = HttpManager()
+        requestURLBase = httpManager.requestURLBase
+        deviceID = httpManager.deviceID
     }
     
     @IBAction func submitButton() {
-        let httpManager = HttpManager()
-        httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text], callBack: processResponse)
+        httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text, "deviceID": deviceID], callBack: processResponse)
     }
     
     func processResponse(responseData: String) {
