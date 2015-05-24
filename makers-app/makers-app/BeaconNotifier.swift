@@ -14,7 +14,6 @@ class BeaconNotifier: NSObject, ESTBeaconManagerDelegate {
     var hasArrived = false
     var isAboutToLeave = false
     var hasLeft = false
-//    let cll = CLLocationManager()
     
     let beaconRegion = CLBeaconRegion(
         proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
@@ -26,32 +25,35 @@ class BeaconNotifier: NSObject, ESTBeaconManagerDelegate {
     }
     
     func requestPermissions() {
-//        cll.pausesLocationUpdatesAutomatically = false
         bManager.requestAlwaysAuthorization()
         bManager.avoidUnknownStateBeacons = true
         bManager.startMonitoringForRegion(beaconRegion)
+        bManager.startRangingBeaconsInRegion(beaconRegion)
     }
     
-    func bManager(manager: ESTBeaconManager,
-        didEnterRegion region: [CLBeaconRegion]) {
-        println("sucess")
+
+//    func beaconManager(manager: AnyObject!,
+//        didEnterRegion beacons: [AnyObject]!,
+//        inRegion region: CLBeaconRegion!) {
+//            if let nearestBeacon = beacons.first as? CLBeacon {
+//                //do what you want to happen when you see a beacon here
+//                println("works")
+//            }
+//    }
+    
+    func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
+        println("did enter region")
     }
     
-    func didEnterRegion() {
-        if (!hasArrived) {
-            hasArrived = true
-            println("User has arrived for the first time")
-        } else {
-            isAboutToLeave = true
-            println("User is about to leave")
-        }
+    func beaconManager(manager: AnyObject!,
+        didRangeBeacons beacons: [AnyObject]!,
+        inRegion region: CLBeaconRegion!) {
+            if let nearestBeacon = beacons.first as? CLBeacon {
+                //do what you want to happen when you see a beacon here
+                println("in range")
+                println(region)
+            }
     }
     
-    func didExitRegion() {
-        if (isAboutToLeave) {
-            hasLeft = true
-            println("User has left :(")
-        }
-    }
-    
+
 }
