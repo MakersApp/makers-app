@@ -24,36 +24,29 @@ class BeaconNotifier: NSObject, ESTBeaconManagerDelegate {
         bManager.delegate = self
     }
     
+// comment in startRaning and the beaconManager method with didRangeBeacons arg to use ranging.
     func requestPermissions() {
         bManager.requestAlwaysAuthorization()
         bManager.avoidUnknownStateBeacons = true
         bManager.startMonitoringForRegion(beaconRegion)
-        bManager.startRangingBeaconsInRegion(beaconRegion)
+//        bManager.startRangingBeaconsInRegion(beaconRegion)
     }
-    
-
-//    func beaconManager(manager: AnyObject!,
-//        didEnterRegion beacons: [AnyObject]!,
-//        inRegion region: CLBeaconRegion!) {
-//            if let nearestBeacon = beacons.first as? CLBeacon {
-//                //do what you want to happen when you see a beacon here
-//                println("works")
-//            }
-//    }
     
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         println("did enter region")
     }
     
-    func beaconManager(manager: AnyObject!,
-        didRangeBeacons beacons: [AnyObject]!,
-        inRegion region: CLBeaconRegion!) {
-            if let nearestBeacon = beacons.first as? CLBeacon {
-                //do what you want to happen when you see a beacon here
-                println("in range")
-                println(region)
-            }
+    func beaconManager(manager: AnyObject!, didDetermineState state: CLRegionState, forRegion region: CLBeaconRegion!) {
+            println("state",state,"region", region)
     }
+
+//    func beaconManager(manager: AnyObject!,
+//        didRangeBeacons beacons: [AnyObject]!,
+//        inRegion region: CLBeaconRegion!) {
+//            if let nearestBeacon = beacons.first as? CLBeacon {
+//                println("in range")
+//            }
+//    }
     
 
 }
