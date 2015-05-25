@@ -10,13 +10,55 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
+    
+    let beaconManager = ESTBeaconManager()
+    var hasArrived = false
+    var isAboutToLeave = false
+    var hasLeft = false
+    
+    let beaconRegion = CLBeaconRegion(
+        proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), major: 33613, minor: 1285, identifier: "MakerBeacon")
+    
+    func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
+        println("did enter region")
+        var localNotification: UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "Testing notifications on iOS8"
+        localNotification.alertBody = "Woww it works!!"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
 
+    }
+    
+    func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {
+        println("did exit region")
+    }
+    
+    func beaconManager(manager: AnyObject!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        println("STATUS CHANGED: \(status.rawValue)")
+        if status == .AuthorizedAlways{
+            println("YAY! Authorized!")
+        }
+    }
+    
+    func beaconManager(manager: AnyObject!, monitoringDidFailForRegion region: CLBeaconRegion!, withError error: NSError!) {
+        println("failed")
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+//        let notify = UIMutableUserNotificationAction()
+//        notify.identifier = "1234567890"
+//        notify.title = "Hello"
+//        notify.activationMode = UIUserNotificationActivationMode.Foreground
+            
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
+            UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        
+        beaconManager.requestAlwaysAuthorization()
+        beaconManager.delegate = self
+        beaconManager.startMonitoringForRegion(beaconRegion)
         return true
     }
 

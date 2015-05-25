@@ -12,7 +12,7 @@ class OkViewController: UIViewController {
     
     var userName: String!
     var teamMember: String!
-    let beaconNotifier = BeaconNotifier()
+//    let beaconNotifier = BeaconNotifier()
     
     @IBOutlet weak var userNameLabel: UILabel!
     
@@ -26,14 +26,14 @@ class OkViewController: UIViewController {
         } else {
             teamNameLabel.text = "We will notify a member of staff when you arrive."
         }
-        beaconNotifier.requestPermissions()
+//        beaconNotifier.requestPermissions()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
