@@ -12,7 +12,6 @@ class OkViewController: UIViewController {
     
     var userName: String!
     var teamMember: String!
-//    let beaconNotifier = BeaconNotifier()
     
     @IBOutlet weak var userNameLabel: UILabel!
     
@@ -26,23 +25,5 @@ class OkViewController: UIViewController {
         } else {
             teamNameLabel.text = "We will notify a member of staff when you arrive."
         }
-//        beaconNotifier.requestPermissions()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

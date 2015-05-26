@@ -10,25 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameInput: UITextField!
-    var httpManager: HttpManager!
-    var requestURLBase: String!
-    var deviceID: String!
-    
+    @IBOutlet weak var nameInput: UITextField!    
     var userName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        httpManager = HttpManager()
-        requestURLBase = httpManager.requestURLBase
-        deviceID = httpManager.deviceID
     }
     
     @IBAction func submitButton() {
-        httpManager.makePostRequest(requestURLBase, params: ["name": nameInput.text, "deviceID": deviceID], callBack: processResponse)
+        NewUser(name: nameInput.text, callBack: processResponse)
     }
     
-    func processResponse(responseData: String) {
+    func processResponse(responseData: NSDictionary) {
         performSegueWithIdentifier("showWelcomePage", sender: nil)
     }
 

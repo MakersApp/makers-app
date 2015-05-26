@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
+		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
+		84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F241B14A54A00EB6DDB /* NewVisit.swift */; };
+		84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F261B14A6F900EB6DDB /* NewUser.swift */; };
 		BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */; };
 		BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F39051B10B6D400CAECB3 /* OkViewController.swift */; };
 		BF7F39081B10D1DF00CAECB3 /* eyeTestMatchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */; };
@@ -40,8 +44,12 @@
 
 /* Begin PBXFileReference section */
 		020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
+		84C40F241B14A54A00EB6DDB /* NewVisit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVisit.swift; sourceTree = "<group>"; };
+		84C40F261B14A6F900EB6DDB /* NewUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		B0153830F358054F1E3F3642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BF7F39051B10B6D400CAECB3 /* OkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OkViewController.swift; sourceTree = "<group>"; };
 		BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTestMatchers.js; sourceTree = "<group>"; };
 		BFD79FF61B0E247600DD4346 /* makers-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "makers-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +150,10 @@
 				BFD79FF91B0E247600DD4346 /* Supporting Files */,
 				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
 				BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */,
+				84C40F1E1B14840600EB6DDB /* CheckIn.swift */,
+				84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */,
+				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
+				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 				TargetAttributes = {
 					BFD79FF51B0E247600DD4346 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X9J2XHJ4FS;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -340,11 +353,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
+				84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
+				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
+				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
+				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
 				BFE9BA741B11DB9E00885EF2 /* BeaconNotifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +490,7 @@
 			baseConfigurationReference = 020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",
@@ -495,6 +513,7 @@
 			buildSettings = {
 				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",

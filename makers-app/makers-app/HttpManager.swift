@@ -10,19 +10,31 @@ import Foundation
 import Alamofire
 
 class HttpManager {
-    
-    let requestURLBase = "http://makersvisitorapi.herokuapp.com/users/"
-    let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
-    
-    func makePostRequest(address: String, params: [String: String], callBack: (data: String)->()){
-//        Alamofire.request(.POST, address, parameters: params)
-//            .responseJSON { (_, _, JSON, _) in
-//                if let object = JSON as? NSDictionary {
-//                    var dataStr = object["name"] as! String
-//                    callBack(data: dataStr)
-//                }
-        callBack(data: "name")
-//        }
+  
+  func makeGetRequest(address: String, callBack: (data: NSDictionary)->()){
+    Alamofire.request(.GET, address)
+      .responseJSON { (_, _, JSON, _) in
+        if let object = JSON as? NSDictionary {
+          callBack(data: object)
+        }
     }
-    
+  }
+
+  func makePostRequest(address: String, params: [String: String], callBack: (data: NSDictionary)->()){
+      Alamofire.request(.POST, address, parameters: params)
+          .responseJSON { (_, _, JSON, _) in
+              if let object = JSON as? NSDictionary {
+                  callBack(data: object)
+              }
+      }
+  }
+  
+  func makePatchRequest(address: String, params: [String: String], callBack: (data: NSDictionary)->()){
+      Alamofire.request(.PATCH, address, parameters: params)
+        .responseJSON { (_, _, JSON, _) in
+          if let object = JSON as? NSDictionary {
+            callBack(data: object)
+          }
+      }
+  }
 }

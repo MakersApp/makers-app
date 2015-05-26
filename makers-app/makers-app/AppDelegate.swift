@@ -13,23 +13,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
-    
     let beaconManager = ESTBeaconManager()
-    var hasArrived = false
-    var isAboutToLeave = false
-    var hasLeft = false
-    
     let beaconRegion = CLBeaconRegion(
         proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), major: 33613, minor: 1285, identifier: "MakerBeacon")
     
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         println("did enter region")
-        var localNotification: UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "Testing notifications on iOS8"
-        localNotification.alertBody = "Woww it works!!"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-
+        let deviceeID = UIDevice.currentDevice().identifierForVendor.UUIDString
+        CheckIfCheckedIn(deviceID: deviceeID)
     }
     
     func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {
