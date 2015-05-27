@@ -19,6 +19,8 @@ class OkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameLabel.layer.borderWidth = 2
+        userNameLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
         userNameLabel.text = "Thanks, \(userName)!"
         if (teamMember != "unknown") {
             teamNameLabel.text = "We will let \(teamMember) know when you arrive."

@@ -11,15 +11,19 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var greetingText: UILabel!
+    
     var userName: String!
     var teamMember: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingText.text = "Hi \(userName)!"
+        greetingText.text = "Who are you meeting?"
+        greetingText.layer.borderWidth = 2
+        greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
     }
 
     @IBAction func nameSelect(sender: UIButton) {
+        
         teamMember = sender.currentTitle
         if (teamMember == "I don't know!") {
             teamMember = "unknown"

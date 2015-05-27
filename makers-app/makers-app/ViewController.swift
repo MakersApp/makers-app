@@ -10,10 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var nameInput: UITextField!
+//    @IBOutlet var headerBar: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingText.layer.borderWidth = 2
+        greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
+        nameInput.layer.borderWidth = 2
+        nameInput.layer.borderColor = UIColor.lightGrayColor().CGColor
+        let imageView = UIImage(named: "banner_logo") as UIImage?
+        
+        self.navigationItem.titleView = UIImageView(image: imageView)
     }
     
     @IBAction func submitButton() {
