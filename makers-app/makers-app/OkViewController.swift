@@ -19,13 +19,13 @@ class OkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabel.text = "Thanks, \(userName)!"
-        if (teamMember != "unknown") {
-            teamNameLabel.text = "We will let \(teamMember) know when you arrive."
-        } else {
-            teamNameLabel.text = "We will notify a member of staff when you arrive."
-        }
-        let beaconNotifier = BeaconNotifier()
+//        userNameLabel.text = "Thanks, \(userName)!"
+//        if (teamMember != "unknown") {
+//            teamNameLabel.text = "We will let \(teamMember) know when you arrive."
+//        } else {
+//            teamNameLabel.text = "We will notify a member of staff when you arrive."
+//        }
+//        let beaconNotifier = BeaconNotifier()
     }
 
     override func didReceiveMemoryWarning() {

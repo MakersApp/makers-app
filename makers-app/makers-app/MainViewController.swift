@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import QuartzCore
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var markerButtons: [UIButton]!
+    
     @IBOutlet weak var greetingText: UILabel!
     var userName: String!
     var teamMember: String!
     var httpManager: HttpManager!
     var requestURLBase: String!
     var deviceID: String!
+    var lineDrawer: LineDrawer!
+    
+    let screenBounds: CGRect = UIScreen.mainScreen().bounds
+    var screenWidth: CGFloat = 0
+    var screenHeight: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +31,11 @@ class MainViewController: UIViewController {
         httpManager = HttpManager()
         requestURLBase = httpManager.requestURLBase
         deviceID = httpManager.deviceID
+        lineDrawer = LineDrawer(passedCtrl: self)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        lineDrawer.drawLines(markerButtons, durationInSeconds: 5.0)
     }
 
     @IBAction func nameSelect(sender: UIButton) {
@@ -42,6 +55,7 @@ class MainViewController: UIViewController {
         okViewController.userName = userName
         okViewController.teamMember = teamMember
     }
+    
     
     
     /*

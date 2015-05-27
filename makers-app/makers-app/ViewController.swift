@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
 
+    @IBOutlet var markerButtons: [UIButton]!
+    
+    //@IBOutlet var markerButtons2: [UIButton]!
+    
     @IBOutlet weak var nameInput: UITextField!
     var httpManager: HttpManager!
     var requestURLBase: String!
     var deviceID: String!
+    var lineDrawer: LineDrawer!
     
     var userName: String = ""
     
@@ -22,6 +28,11 @@ class ViewController: UIViewController {
         httpManager = HttpManager()
         requestURLBase = httpManager.requestURLBase
         deviceID = httpManager.deviceID
+        lineDrawer = LineDrawer(passedCtrl: self)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        lineDrawer.drawLines(markerButtons, durationInSeconds: 3.0)
     }
     
     @IBAction func submitButton() {
@@ -36,5 +47,6 @@ class ViewController: UIViewController {
         var mainViewController = segue.destinationViewController as! MainViewController
         mainViewController.userName = nameInput.text
     }
+    
 }
 
