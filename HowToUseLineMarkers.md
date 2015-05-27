@@ -28,7 +28,7 @@ How to use
   }
   ```
 * To render the lines on the page, the function call needs to be added to your view controller's `viewDidLayoutSubviews` method. This is because `viewDidLoad` is executed as soon as the view is loaded into memory (i.e. before AutoLayout has been applied to the view - meaning that the constraints you added to your markers will not yet have been applied, so your lines will be in the wrong places):
-  ```swift
+  ```swift 
   override func viewDidLayoutSubviews() {
     lineDrawer.drawLines(markerButtons, durationInSeconds: 3.0)
   }
