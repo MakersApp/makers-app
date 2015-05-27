@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        lineDrawer.drawLines(markerButtons, durationInSeconds: 5.0)
+        lineDrawer.drawLines(markerButtons, durationInSeconds: 1.0)
     }
 
     @IBAction func nameSelect(sender: UIButton) {
