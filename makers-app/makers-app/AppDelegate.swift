@@ -8,10 +8,10 @@
 
 import UIKit
 import CoreData
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
-
+    
+    var alreadyHitBeacon: Bool = false
     var window: UIWindow?
     let beaconManager = ESTBeaconManager()
     let beaconRegion = CLBeaconRegion(
@@ -19,8 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         println("did enter region")
-        let deviceeID = UIDevice.currentDevice().identifierForVendor.UUIDString
-        CheckIfCheckedIn(deviceID: deviceeID)
+        if alreadyHitBeacon == false {
+            NSNotificationCenter.defaultCenter().postNotificationName("some string", object: self)
+            alreadyHitBeacon = true
+        } else {
+            NSNotificationCenter.defaultCenter().postNotificationName("hit beacon again", object: self)
+        }
+
     }
     
     func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {

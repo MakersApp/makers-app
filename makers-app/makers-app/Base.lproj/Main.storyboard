@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -64,6 +64,7 @@
                         <outlet property="greetingText" destination="zDo-KT-fm3" id="Z1Q-4i-CmY"/>
                         <outlet property="nameInput" destination="VXc-nx-YCZ" id="LGy-ty-3f2"/>
                         <segue destination="3v7-Rl-IPB" kind="modal" identifier="showWelcomePage" id="luK-Uc-qyY"/>
+                        <segue destination="p9s-gp-JIt" kind="modal" identifier="hasAVisit" id="FUf-gL-TrP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -438,6 +439,7 @@
                     <connections>
                         <outlet property="teamNameLabel" destination="5PO-8m-h9I" id="pcf-Ei-cGP"/>
                         <outlet property="userNameLabel" destination="jDH-x0-MGz" id="1g1-F8-uQq"/>
+                        <segue destination="QcM-Cf-3ZU" kind="modal" identifier="hashVisitAndBeacon" id="af4-Sr-n4n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Da-Ne-Rvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,13 +473,41 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u7r-ei-Ywh"/>
                     <connections>
-                        <outlet property="hostName" destination="TxJ-6g-Bqu" id="Q34-ft-Ulb"/>
+                        <outlet property="hostName" destination="a0f-I0-wdI" id="OcA-jc-A6I"/>
+                        <segue destination="VCQ-u9-mE6" kind="modal" identifier="questionaire" id="9Qy-Rm-X02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTA-46-INt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216.53333333333333" y="1112.3333333333333"/>
+            <point key="canvasLocation" x="1228" y="1148"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YYC-Lc-gpb">
+            <objects>
+                <viewController id="VCQ-u9-mE6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jh6-By-SYv"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbO-tx-Nt1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Evl-BF-cXP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="answer the fucking questionaire you slarg!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-mm-CFm">
+                                <rect key="frame" x="5" y="161" width="392" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKw-Er-msH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="1137"/>
         </scene>
     </scenes>
     <resources>
@@ -497,4 +527,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="eGu-9U-AUA"/>
+    </inferredMetricsTieBreakers>
 </document>

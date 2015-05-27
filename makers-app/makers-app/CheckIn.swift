@@ -11,7 +11,8 @@ import Foundation
 class CheckIn{
 
 
-    init(deviceID:String){
+    init(){
+        let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
         let parameters: [String:String] = ["phone_id":deviceID]
         let httpManager = HttpManager()
         httpManager.makePatchRequest("http://makersvisitorapi.herokuapp.com/checkin", params: parameters, callBack: checkInCallBack)
@@ -19,7 +20,7 @@ class CheckIn{
     
     func checkInCallBack(data:NSDictionary){
         println("in check in call back")
-        // Access the storyboard and fetch an instance of the view controller
+        
   
     }
 

@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submitButton() {
-//        SceneChangeHandler().ChangeScene()
         NewUser(name: nameInput.text, callBack: processResponse)
     }
     
@@ -35,8 +34,9 @@ class ViewController: UIViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var mainViewController = segue.destinationViewController as! MainViewController
-        mainViewController.userName = nameInput.text
+        if var mainViewController = segue.destinationViewController as? MainViewController {
+            mainViewController.userName = nameInput.text
+        }
     }
 }
 

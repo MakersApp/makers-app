@@ -406,7 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
+				84BAEFE61B15CF9000CA2327 /* CheckIfHasVisit.swift in Sources */,
 				84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */,
+				843020051B16150D00068DAB /* QuestionnaireViewController.swift in Sources */,
 				84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
 				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
@@ -416,7 +418,6 @@
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
-				84BAEFD41B15B8C600CA2327 /* SceneChangeHandler.swift in Sources */,
 				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
 				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
 			);

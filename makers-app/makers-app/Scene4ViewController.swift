@@ -10,12 +10,13 @@ import UIKit
 
 class Scene4ViewController: UIViewController {
 
-    @IBOutlet weak var hostName: UILabel!
+//    @IBOutlet weak var hostName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         println("in Scene4ViewController")
-
+        CheckIfCheckedIn(checkinCallback: updateDisplay)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeaconagain", name: "hit beacon again", object: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -24,10 +25,17 @@ class Scene4ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func changeScene(){
-
+//    func changeScene(){
+//
+//    }
+    @IBOutlet weak var hostName: UILabel!
+    func updateDisplay(hostname:String){
+        hostName.text = hostname
     }
     
+    func hitbeaconagain(){
+        performSegueWithIdentifier("questionaire", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -1,5 +1,5 @@
 //
-//  SceneChangeHandler.swift
+//  QuestionnaireViewController.swift
 //  makers-app
 //
 //  Created by Makers Laptop 16 on 27/05/2015.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class SceneChangeHandler: UIViewController {
+class QuestionnaireViewController: UIViewController {
 
-    func ChangeScene(){
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        let vc = WelcomeScreen(nibName: "WelcomeScreen", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 
