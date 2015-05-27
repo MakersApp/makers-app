@@ -15,13 +15,9 @@ class LineDrawer {
     
     var viewCtrl: UIViewController
     var markersOnView: [UIButton] = []
-    let screenBounds: CGRect = UIScreen.mainScreen().bounds
-    var screenWidth: CGFloat = 0
-    var screenHeight: CGFloat = 0
 
     init(passedCtrl: UIViewController) {
         viewCtrl = passedCtrl
-
     }
     
     func drawLines(markers: [UIButton], durationInSeconds: Double = 7.0) {
@@ -45,8 +41,6 @@ class LineDrawer {
     }
     
     func line() -> UIBezierPath {
-        screenWidth = screenBounds.width
-        screenHeight = screenBounds.height
         var linePath = UIBezierPath()
         linePath.moveToPoint(markersOnView[0].center)
         for i in 1...(markersOnView.count - 1) {
