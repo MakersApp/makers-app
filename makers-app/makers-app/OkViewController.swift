@@ -20,12 +20,24 @@ class OkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeacon", name: "some string", object: nil)
-        userNameLabel.text = "Thanks, \(userName)!"
-        if (teamMember != "unknown") {
-            teamNameLabel.text = "We will let \(teamMember) know when you arrive."
-        } else {
-            teamNameLabel.text = "We will notify a member of staff when you arrive."
-        }
+        
+        CheckIfHasVisit(callBack: getTeamMember)
+        
+//        userNameLabel.text = "Thanks, \(userName)!"
+//        if (teamMember != "unknown") {
+//            teamNameLabel.text = "We will let \(teamMember) know when you arrive."
+//        } else {
+//            teamNameLabel.text = "We will notify a member of staff when you arrive."
+//        }
+    }
+    
+    func getTeamMember(data:NSDictionary){
+        let str = data["team_member"] as! String
+            if str != "unknown" && str != "event" {
+                teamNameLabel.text = "We will let \(str) know when you arrive."
+            } else {
+                teamNameLabel.text = "We will notify a member of staff when you arrive."
+            }
     }
     
     func hitbeacon(){

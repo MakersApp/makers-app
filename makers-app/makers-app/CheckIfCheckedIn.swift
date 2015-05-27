@@ -11,9 +11,11 @@ import UIKit
 
 class CheckIfCheckedIn {
     var device_id: String = ""
+    var checkinCallbackToExecute:(String)->()
     
-    init(deviceID:String){
-        let device_id = deviceID
+    init(checkinCallback:(String)->()){
+        checkinCallbackToExecute = checkinCallback
+        let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
         let address: String = "http://makersvisitorapi.herokuapp.com/visits?phone_id=\(deviceID)"
         println(address)
         let httpManager = HttpManager()
@@ -22,18 +24,20 @@ class CheckIfCheckedIn {
     
     func CheckedInCallBack(data:NSDictionary){
         println("checked in call back")
-        // temp putting scenechange here
-       
-        CheckIn(deviceID:device_id)
-        if data == "not checked in" {
-            // check 'em in
-            CheckIn(deviceID:device_id)
+        println(data["checkedin"])
         
-        } else if data == "already checked in" {
-            //redirect to the questionaire
-        } else {
-            // error!! panic!!!!
+        let str = data["team_member"] as! String
+        checkinCallbackToExecute(str)
+        
+        if data["checkedin"] as! Int == 0 {
+            println("in if block")
+            CheckIn()
         }
+//        } else if data == "already checked in" {
+//            //redirect to the questionaire
+//        } else {
+//            // error!! panic!!!!
+//        }
     
     }
 

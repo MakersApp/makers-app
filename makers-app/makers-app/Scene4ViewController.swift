@@ -10,11 +10,12 @@ import UIKit
 
 class Scene4ViewController: UIViewController {
 
-    @IBOutlet weak var hostName: UILabel!
+//    @IBOutlet weak var hostName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         println("in Scene4ViewController")
+        CheckIfCheckedIn(checkinCallback: updateDisplay)
 
         // Do any additional setup after loading the view.
     }
@@ -24,10 +25,13 @@ class Scene4ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func changeScene(){
-
+//    func changeScene(){
+//
+//    }
+    @IBOutlet weak var hostName: UILabel!
+    func updateDisplay(hostname:String){
+        hostName.text = hostname
     }
-    
 
     /*
     // MARK: - Navigation
