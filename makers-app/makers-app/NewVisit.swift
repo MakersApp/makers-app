@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 class NewVisit {
-    init(team_memeber:String, callBack:(NSDictionary)->()){
+    init(team_member:String, callBack:(NSDictionary)->()){
         let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
         let address: String = "https://makersvisitorapi.herokuapp.com/visits"
         let httpManager = HttpManager()
-        let paramaeters = ["phone_id":deviceID, "team_memeber": team_memeber]
+        let paramaeters = ["phone_id":deviceID, "team_member": team_member]
         httpManager.makePostRequest(address, params: paramaeters, callBack: callBack)
     }
 }

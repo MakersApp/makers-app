@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameInput: UITextField!    
-    var userName: String = ""
+    @IBOutlet weak var nameInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func submitButton() {
+//        SceneChangeHandler().ChangeScene()
         NewUser(name: nameInput.text, callBack: processResponse)
     }
     

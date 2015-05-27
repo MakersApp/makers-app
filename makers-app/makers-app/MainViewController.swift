@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         if (teamMember == "I don't know!") {
             teamMember = "unknown"
         }
-        NewVisit(team_memeber:teamMember, callBack:processResponse)
+        NewVisit(team_member: teamMember, callBack:processResponse)
     }
     
     func processResponse(responseData: NSDictionary) {

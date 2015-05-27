@@ -39,14 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//        let notify = UIMutableUserNotificationAction()
-//        notify.identifier = "1234567890"
-//        notify.title = "Hello"
-//        notify.activationMode = UIUserNotificationActivationMode.Foreground
-            
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
             UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
-        
         beaconManager.requestAlwaysAuthorization()
         beaconManager.delegate = self
         beaconManager.startMonitoringForRegion(beaconRegion)

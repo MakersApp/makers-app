@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BAEFD41B15B8C600CA2327 /* SceneChangeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */; };
+		84BAEFDF1B15C02D00CA2327 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */; };
+		84BAEFE01B15C02D00CA2327 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */; };
 		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
 		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
 		84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F241B14A54A00EB6DDB /* NewVisit.swift */; };
 		84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F261B14A6F900EB6DDB /* NewUser.swift */; };
+		84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */; };
 		BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */; };
 		BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F39051B10B6D400CAECB3 /* OkViewController.swift */; };
 		BF7F39081B10D1DF00CAECB3 /* eyeTestMatchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */; };
@@ -25,7 +29,6 @@
 		BFD7A0251B0E394A00DD4346 /* ma.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0241B0E394A00DD4346 /* ma.png */; };
 		BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD7A0261B0E3A3200DD4346 /* ma2.png */; };
 		BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7A02A1B0E480100DD4346 /* MainViewController.swift */; };
-		BFE9BA741B11DB9E00885EF2 /* BeaconNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */; };
 		BFE9BA761B11E0D500885EF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA751B11E0D500885EF2 /* CoreLocation.framework */; };
 		BFE9BA781B11E0DB00885EF2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA771B11E0DB00885EF2 /* CoreBluetooth.framework */; };
 		BFE9BA7C1B11E18500885EF2 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9BA7B1B11E18500885EF2 /* EstimoteSDK.framework */; };
@@ -44,10 +47,14 @@
 
 /* Begin PBXFileReference section */
 		020E346C1D8C0B7E6D2A1AD6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneChangeHandler.swift; sourceTree = "<group>"; };
+		84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
 		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
 		84C40F241B14A54A00EB6DDB /* NewVisit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVisit.swift; sourceTree = "<group>"; };
 		84C40F261B14A6F900EB6DDB /* NewUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
+		84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene4ViewController.swift; sourceTree = "<group>"; };
 		B0153830F358054F1E3F3642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BF7F39051B10B6D400CAECB3 /* OkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OkViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		BFD7A0241B0E394A00DD4346 /* ma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma.png; path = Images.xcassets/ma.png; sourceTree = "<group>"; };
 		BFD7A0261B0E3A3200DD4346 /* ma2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ma2.png; path = Images.xcassets/ma2.png; sourceTree = "<group>"; };
 		BFD7A02A1B0E480100DD4346 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconNotifier.swift; sourceTree = "<group>"; };
 		BFE9BA751B11E0D500885EF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFE9BA771B11E0DB00885EF2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		BFE9BA791B11E13400885EF2 /* EstimoteSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = EstimoteSDK; path = Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework/Versions/A/EstimoteSDK; sourceTree = "<group>"; };
@@ -149,11 +155,14 @@
 				BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */,
 				BFD79FF91B0E247600DD4346 /* Supporting Files */,
 				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
-				BFE9BA731B11DB9E00885EF2 /* BeaconNotifier.swift */,
 				84C40F1E1B14840600EB6DDB /* CheckIn.swift */,
 				84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */,
 				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
 				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
+				84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */,
+				84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */,
+				84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */,
+				84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -284,6 +293,7 @@
 				BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */,
 				BFD7A0091B0E247600DD4346 /* LaunchScreen.xib in Resources */,
 				BFD7A0061B0E247600DD4346 /* Images.xcassets in Resources */,
+				84BAEFE01B15C02D00CA2327 /* WelcomeScreen.xib in Resources */,
 				BFD7A0251B0E394A00DD4346 /* ma.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,15 +364,17 @@
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
 				84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */,
+				84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
 				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
+				84BAEFDF1B15C02D00CA2327 /* WelcomeScreen.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
+				84BAEFD41B15B8C600CA2327 /* SceneChangeHandler.swift in Sources */,
 				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
 				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
-				BFE9BA741B11DB9E00885EF2 /* BeaconNotifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
