@@ -20,12 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         println("did enter region")
         if alreadyHitBeacon == false {
+            var notification = UILocalNotification()
+            notification.alertBody = "Welcome"
+            notification.alertAction = "open"
+            notification.soundName = UILocalNotificationDefaultSoundName
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
             NSNotificationCenter.defaultCenter().postNotificationName("some string", object: self)
             alreadyHitBeacon = true
         } else {
+            var notification = UILocalNotification()
+            notification.alertBody = "Thanks for visiting"
+            notification.alertAction = "open"
+            notification.soundName = UILocalNotificationDefaultSoundName
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
             NSNotificationCenter.defaultCenter().postNotificationName("hit beacon again", object: self)
         }
-
     }
     
     func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {

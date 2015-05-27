@@ -18,9 +18,7 @@ class CheckIn{
         httpManager.makePatchRequest("http://makersvisitorapi.herokuapp.com/checkin", params: parameters, callBack: checkInCallBack)
     }
     
-    func checkInCallBack(data:NSDictionary){
-        println("in check in call back")
-        
+    func checkInCallBack(data:NSDictionary){        
   
     }
 

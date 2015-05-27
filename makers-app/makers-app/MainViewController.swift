@@ -23,8 +23,9 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func nameSelect(sender: UIButton) {
-        
+
         teamMember = sender.currentTitle
+        println(teamMember)
         if (teamMember == "I don't know!") {
             teamMember = "unknown"
         }

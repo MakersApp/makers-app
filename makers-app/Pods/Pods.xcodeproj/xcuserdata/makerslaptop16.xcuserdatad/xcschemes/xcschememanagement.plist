@@ -6,23 +6,23 @@
 	<dict>
 		<key>Pods-Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>95EE502604A20F07A15E1216</key>
+		<key>08C838FED0A5B778F6726F79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C3B2D0A122482E3F31D9F2C</key>
+		<key>8577BADD6B26D5316DC4F186</key>
 		<dict>
 			<key>primary</key>
 			<true/>

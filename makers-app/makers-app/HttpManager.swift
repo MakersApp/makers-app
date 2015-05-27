@@ -14,7 +14,6 @@ class HttpManager {
   func makeGetRequest(address: String, callBack: (data: NSDictionary)->()){
     Alamofire.request(.GET, address)
       .responseJSON { (_, _, JSON, _) in
-//        println("get request",JSON)
         if let object = JSON as? NSDictionary {
           callBack(data: object)
         } 
@@ -24,9 +23,8 @@ class HttpManager {
   func makePostRequest(address: String, params: [String: String], callBack: (data: NSDictionary)->()){
       Alamofire.request(.POST, address, parameters: params)
           .responseJSON { (_, _, JSON, _) in
-            println("post request",JSON,JSON.dynamicType)
               if let object = JSON as? NSDictionary {
-                  println("lets object as json")
+                println("hi from rich and james!!")
                   callBack(data: object)
               }
       }
@@ -35,7 +33,6 @@ class HttpManager {
   func makePatchRequest(address: String, params: [String: String], callBack: (data: NSDictionary)->()){
       Alamofire.request(.PATCH, address, parameters: params)
         .responseJSON { (_, _, JSON, _) in
-//          println("patch request",JSON)
           if let object = JSON as? NSDictionary {
             callBack(data: object)
           }

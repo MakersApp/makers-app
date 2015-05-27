@@ -21,8 +21,12 @@ class ViewController: UIViewController {
         nameInput.layer.borderWidth = 2
         nameInput.layer.borderColor = UIColor.lightGrayColor().CGColor
         let imageView = UIImage(named: "banner_logo") as UIImage?
-        
         self.navigationItem.titleView = UIImageView(image: imageView)
+        CheckIfHasVisit(callBack: hasVisitSegue)
+    }
+    
+    func hasVisitSegue(data:NSDictionary){
+        performSegueWithIdentifier("hasAVisit", sender: nil)
     }
     
     @IBAction func submitButton() {

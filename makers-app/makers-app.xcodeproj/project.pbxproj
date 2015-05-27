@@ -18,9 +18,7 @@
 		35124AAC1B160470000BA567 /* Will.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA31B160470000BA567 /* Will.png */; };
 		35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE701B1B15DB3D00978AE0 /* myCustomView.swift */; };
 		35FE701E1B15F1E900978AE0 /* banner_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FE701D1B15F1E900978AE0 /* banner_logo.png */; };
-		84BAEFD41B15B8C600CA2327 /* SceneChangeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */; };
-		84BAEFDF1B15C02D00CA2327 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */; };
-		84BAEFE01B15C02D00CA2327 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */; };
+		8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843020091B162F8A00068DAB /* CheckifHasVisit2.swift */; };
 		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
 		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
 		84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F241B14A54A00EB6DDB /* NewVisit.swift */; };
@@ -69,9 +67,7 @@
 		35124AA31B160470000BA567 /* Will.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Will.png; sourceTree = "<group>"; };
 		35FE701B1B15DB3D00978AE0 /* myCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCustomView.swift; sourceTree = "<group>"; };
 		35FE701D1B15F1E900978AE0 /* banner_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_logo.png; sourceTree = "<group>"; };
-		84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneChangeHandler.swift; sourceTree = "<group>"; };
-		84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
-		84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
+		843020091B162F8A00068DAB /* CheckifHasVisit2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckifHasVisit2.swift; sourceTree = "<group>"; };
 		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
 		84C40F241B14A54A00EB6DDB /* NewVisit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVisit.swift; sourceTree = "<group>"; };
@@ -182,10 +178,8 @@
 				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
 				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
 				84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */,
-				84BAEFD31B15B8C600CA2327 /* SceneChangeHandler.swift */,
-				84BAEFDD1B15C02D00CA2327 /* WelcomeScreen.swift */,
-				84BAEFDE1B15C02D00CA2327 /* WelcomeScreen.xib */,
 				35FE701B1B15DB3D00978AE0 /* myCustomView.swift */,
+				843020091B162F8A00068DAB /* CheckifHasVisit2.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -333,7 +327,6 @@
 				35124AA81B160470000BA567 /* Nikesh.png in Resources */,
 				35124AAA1B160470000BA567 /* Spike.png in Resources */,
 				BFD7A0061B0E247600DD4346 /* Images.xcassets in Resources */,
-				84BAEFE01B15C02D00CA2327 /* WelcomeScreen.xib in Resources */,
 				35124AA41B160470000BA567 /* Arfah.png in Resources */,
 				BFD7A0251B0E394A00DD4346 /* ma.png in Resources */,
 				35124AAB1B160470000BA567 /* UnknownOther.png in Resources */,
@@ -406,20 +399,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
-				84BAEFE61B15CF9000CA2327 /* CheckIfHasVisit.swift in Sources */,
 				84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */,
-				843020051B16150D00068DAB /* QuestionnaireViewController.swift in Sources */,
 				84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
 				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
 				35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */,
-				84BAEFDF1B15C02D00CA2327 /* WelcomeScreen.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
 				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
 				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
+				8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
