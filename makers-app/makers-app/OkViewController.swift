@@ -19,11 +19,16 @@ class OkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeacon", name: "some string", object: nil)
         userNameLabel.text = "Thanks, \(userName)!"
         if (teamMember != "unknown") {
             teamNameLabel.text = "We will let \(teamMember) know when you arrive."
         } else {
             teamNameLabel.text = "We will notify a member of staff when you arrive."
         }
+    }
+    
+    func hitbeacon(){
+        performSegueWithIdentifier("hashVisitAndBeacon", sender: nil)
     }
 }

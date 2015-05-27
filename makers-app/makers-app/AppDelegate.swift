@@ -8,10 +8,9 @@
 
 import UIKit
 import CoreData
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
-
+    
     var window: UIWindow?
     let beaconManager = ESTBeaconManager()
     let beaconRegion = CLBeaconRegion(
@@ -19,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         println("did enter region")
-        let deviceeID = UIDevice.currentDevice().identifierForVendor.UUIDString
-        CheckIfCheckedIn(deviceID: deviceeID)
+        NSNotificationCenter.defaultCenter().postNotificationName("some string", object: self)
+
     }
     
     func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {

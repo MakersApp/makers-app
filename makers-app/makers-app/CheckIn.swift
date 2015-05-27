@@ -19,7 +19,7 @@ class CheckIn{
     
     func checkInCallBack(data:NSDictionary){
         println("in check in call back")
-        // Access the storyboard and fetch an instance of the view controller
+        
   
     }
 
