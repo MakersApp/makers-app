@@ -16,6 +16,7 @@
 		35124AAA1B160470000BA567 /* Spike.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA11B160470000BA567 /* Spike.png */; };
 		35124AAB1B160470000BA567 /* UnknownOther.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA21B160470000BA567 /* UnknownOther.png */; };
 		35124AAC1B160470000BA567 /* Will.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA31B160470000BA567 /* Will.png */; };
+		35600B251B171A1400B7C421 /* scene6sliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35600B241B171A1400B7C421 /* scene6sliderViewController.swift */; };
 		35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE701B1B15DB3D00978AE0 /* myCustomView.swift */; };
 		35FE701E1B15F1E900978AE0 /* banner_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FE701D1B15F1E900978AE0 /* banner_logo.png */; };
 		8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843020091B162F8A00068DAB /* CheckifHasVisit2.swift */; };
@@ -66,6 +67,7 @@
 		35124AA11B160470000BA567 /* Spike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spike.png; sourceTree = "<group>"; };
 		35124AA21B160470000BA567 /* UnknownOther.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownOther.png; sourceTree = "<group>"; };
 		35124AA31B160470000BA567 /* Will.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Will.png; sourceTree = "<group>"; };
+		35600B241B171A1400B7C421 /* scene6sliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scene6sliderViewController.swift; sourceTree = "<group>"; };
 		35FE701B1B15DB3D00978AE0 /* myCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCustomView.swift; sourceTree = "<group>"; };
 		35FE701D1B15F1E900978AE0 /* banner_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_logo.png; sourceTree = "<group>"; };
 		843020091B162F8A00068DAB /* CheckifHasVisit2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckifHasVisit2.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */,
 				35FE701B1B15DB3D00978AE0 /* myCustomView.swift */,
 				843020091B162F8A00068DAB /* CheckifHasVisit2.swift */,
+				35600B241B171A1400B7C421 /* scene6sliderViewController.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
+				35600B251B171A1400B7C421 /* scene6sliderViewController.swift in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
 				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
