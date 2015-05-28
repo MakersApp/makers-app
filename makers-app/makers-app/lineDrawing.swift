@@ -29,6 +29,12 @@ class LineDrawer {
         animateLineDrawing(duration: durationInSeconds)
     }
     
+    func processMarkers(markers: [UIButton]) {
+        for marker in markers {
+            marker.hidden = true
+        }
+    }
+    
     func sortedMarkers() -> [UIButton] {
         let sortedMarkers = markersOnView.sorted { $0.accessibilityLabel < $1.accessibilityLabel }
         return sortedMarkers

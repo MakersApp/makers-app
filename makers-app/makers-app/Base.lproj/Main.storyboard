@@ -29,6 +29,9 @@
                                 <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startTyping" destination="vXZ-lx-hvc" eventType="editingChanged" id="8PJ-ej-sO8"/>
+                                </connections>
                             </textField>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello from Makers Academy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-KT-fm3">
                                 <rect key="frame" x="35" y="127" width="530" height="40"/>
@@ -146,15 +149,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-bT-Ug0">
-                                <rect key="frame" x="290" y="438" width="21" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-fF-t4K">
+                                <rect key="frame" x="290" y="590" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="M"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-fF-t4K">
-                                <rect key="frame" x="290" y="590" width="21" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-bT-Ug0">
+                                <rect key="frame" x="290" y="438" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="M"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,10 +209,16 @@
                             <constraint firstItem="SpY-0d-sRu" firstAttribute="leading" secondItem="TYk-Er-c2q" secondAttribute="trailing" constant="29" id="o7v-ZC-GRZ"/>
                             <constraint firstItem="SpY-0d-sRu" firstAttribute="centerX" secondItem="Pe1-hY-drP" secondAttribute="centerX" id="omU-e8-2g2"/>
                             <constraint firstItem="zKw-0P-luu" firstAttribute="centerY" secondItem="VXc-nx-YCZ" secondAttribute="centerY" constant="-0.5" id="pZs-5F-faH"/>
+                            <constraint firstAttribute="centerX" secondItem="oBu-bT-Ug0" secondAttribute="centerX" constant="-0.5" id="wia-kM-O5L"/>
                             <constraint firstItem="SpY-0d-sRu" firstAttribute="centerY" secondItem="qkO-F1-GnG" secondAttribute="centerY" id="woE-b6-ntC"/>
                             <constraint firstItem="4Cq-US-0Pc" firstAttribute="bottom" secondItem="zDo-KT-fm3" secondAttribute="bottom" constant="-1" id="y7a-Yg-EfL"/>
                             <constraint firstItem="zuT-0p-mII" firstAttribute="centerY" secondItem="feh-2g-TPu" secondAttribute="centerY" id="zlu-6w-BcM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JMr-X3-ywi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="greetingText" destination="zDo-KT-fm3" id="Z1Q-4i-CmY"/>
@@ -219,15 +228,15 @@
                         <outletCollection property="lineMarkersOne" destination="Rl1-9o-tT7" collectionClass="NSMutableArray" id="zT4-V7-BDk"/>
                         <outletCollection property="lineMarkersOne" destination="zuT-0p-mII" collectionClass="NSMutableArray" id="EeF-Ft-xfJ"/>
                         <outletCollection property="lineMarkersOne" destination="feh-2g-TPu" collectionClass="NSMutableArray" id="jAr-zB-8YC"/>
-                        <outletCollection property="lineMarkersOne" destination="zKw-0P-luu" collectionClass="NSMutableArray" id="Mkr-I5-kfb"/>
-                        <outletCollection property="lineMarkersOne" destination="FMF-l0-dFP" collectionClass="NSMutableArray" id="283-PM-naM"/>
-                        <outletCollection property="lineMarkersOne" destination="qkO-F1-GnG" collectionClass="NSMutableArray" id="XaX-ob-tXK"/>
-                        <outletCollection property="lineMarkersOne" destination="SpY-0d-sRu" collectionClass="NSMutableArray" id="rxM-WI-K5I"/>
-                        <outletCollection property="lineMarkersOne" destination="Pe1-hY-drP" collectionClass="NSMutableArray" id="KNT-CH-nyv"/>
-                        <outletCollection property="lineMarkersOne" destination="ANU-0j-6dt" collectionClass="NSMutableArray" id="1tL-dl-A0N"/>
-                        <outletCollection property="lineMarkersOne" destination="XRK-wC-wku" collectionClass="NSMutableArray" id="Pxi-ua-1Xz"/>
-                        <outletCollection property="lineMarkersOne" destination="oBu-bT-Ug0" collectionClass="NSMutableArray" id="cJ0-St-CsY"/>
-                        <outletCollection property="lineMarkersOne" destination="AaA-fF-t4K" collectionClass="NSMutableArray" id="nb3-Px-dS4"/>
+                        <outletCollection property="lineMarkersTwo" destination="FMF-l0-dFP" collectionClass="NSMutableArray" id="uLd-EP-d1y"/>
+                        <outletCollection property="lineMarkersTwo" destination="qkO-F1-GnG" collectionClass="NSMutableArray" id="Ixe-Cd-R1u"/>
+                        <outletCollection property="lineMarkersTwo" destination="SpY-0d-sRu" collectionClass="NSMutableArray" id="tHK-9d-QrT"/>
+                        <outletCollection property="lineMarkersTwo" destination="Pe1-hY-drP" collectionClass="NSMutableArray" id="h40-NP-hQ2"/>
+                        <outletCollection property="lineMarkersTwo" destination="ANU-0j-6dt" collectionClass="NSMutableArray" id="RoY-oL-uJP"/>
+                        <outletCollection property="lineMarkersTwo" destination="XRK-wC-wku" collectionClass="NSMutableArray" id="c1t-Re-m1O"/>
+                        <outletCollection property="lineMarkersTwo" destination="oBu-bT-Ug0" collectionClass="NSMutableArray" id="6Wz-B0-sJt"/>
+                        <outletCollection property="lineMarkersTwo" destination="AaA-fF-t4K" collectionClass="NSMutableArray" id="MCR-J0-7oV"/>
+                        <outletCollection property="lineMarkersTwo" destination="zKw-0P-luu" collectionClass="NSMutableArray" id="eRA-eB-lPN"/>
                         <segue destination="3v7-Rl-IPB" kind="custom" identifier="showWelcomePage" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="luK-Uc-qyY"/>
                         <segue destination="p9s-gp-JIt" kind="custom" identifier="hasAVisit" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="FUf-gL-TrP"/>
                     </connections>

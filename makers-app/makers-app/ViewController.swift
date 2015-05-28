@@ -16,10 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameInput: UITextField!
     
     @IBOutlet var lineMarkersOne: [UIButton]!
+    @IBOutlet var lineMarkersTwo: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lineDrawer = LineDrawer(passedCtrl: self)
+        lineDrawer.processMarkers(lineMarkersOne)
+        lineDrawer.processMarkers(lineMarkersTwo)
         greetingText.layer.borderWidth = 2
         greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
         nameInput.layer.borderWidth = 2
@@ -30,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        lineDrawer.drawLines(lineMarkersOne, durationInSeconds: 3.0)
+        lineDrawer.drawLines(lineMarkersOne, durationInSeconds: 1.7)
     }
     
     func hasVisitSegue(data:NSDictionary){
@@ -45,6 +48,10 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("showWelcomePage", sender: nil)
     }
 
+    @IBAction func startTyping() {
+        lineDrawer.drawLines(lineMarkersTwo, durationInSeconds: 3.0)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if var mainViewController = segue.destinationViewController as? MainViewController {
             mainViewController.userName = nameInput.text
