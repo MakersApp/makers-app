@@ -25,11 +25,13 @@ class Scene4ViewController: UIViewController {
     
     @IBOutlet weak var hostName: UILabel!
     @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var headView: UIImageView!
     func updateDisplay(data:NSDictionary){
         let hostname: String = data["team_member"] as! String
         hostName.text = hostname
         let username: String = data["username"] as! String
         userName.text = username
+        headView.image = UIImage(named: (hostname))
         
     }
     
