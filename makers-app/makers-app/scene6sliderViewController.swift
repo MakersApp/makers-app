@@ -8,19 +8,27 @@
 
 import UIKit
 
-class scene6sliderViewController: UIViewController {
+class Scene6sliderViewController: UIViewController {
 
     @IBOutlet var slider6: UISlider!
     @IBOutlet var npsNumber: UILabel!
+    var currentValue: Int!
+    var question: String!
+    var email: String!
+    var joinMailingList: Bool!
+    
     
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        var currentValue = Int(sender.value)
+        currentValue = Int(sender.value)
         
         npsNumber.text = "\(currentValue)"
     }
+    @IBOutlet weak var visitToday: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        visitToday.layer.borderWidth = 2
+        visitToday.layer.borderColor = UIColor.lightGrayColor().CGColor
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +37,27 @@ class scene6sliderViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func noThanks(sender: UIButton) {
+        let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
+        let httpManager = HttpManager()
+        let parameters:[String:String] = ["phoneID":"\(deviceID)", "email":"\(email)", "nps":"skipped", "question":"\(question)", "joinMailingList": "\(joinMailingList)"]
+        
+        httpManager.makePostRequest("http://makersvisitorapi.herokuapp.com/feedback", params: parameters, callBack: callbackfunc)
+        performSegueWithIdentifier("question2segue", sender: nil)
+    }
+
+    @IBAction func nextButton(sender: UIButton) {
+        let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
+        let httpManager = HttpManager()
+        let parameters:[String:String] = ["phoneID":"\(deviceID)", "email":"\(email)", "nps":"\(currentValue)", "question":"\(question)", "joinMailingList": "\(joinMailingList)"]
+        
+        httpManager.makePostRequest("http://makersvisitorapi.herokuapp.com/feedback", params: parameters, callBack: callbackfunc)
+        performSegueWithIdentifier("question2segue", sender: nil)
+        }
     
+    func callbackfunc(data:NSDictionary){
+   
+    }
 
     /*
     // MARK: - Navigation

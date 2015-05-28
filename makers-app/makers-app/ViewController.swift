@@ -9,13 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var lineDrawer: LineDrawer!
 
     @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var nameInput: UITextField!
-//    @IBOutlet var headerBar: UINavigationBar!
+    
+    @IBOutlet var lineMarkersOne: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
         greetingText.layer.borderWidth = 2
         greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
         nameInput.layer.borderWidth = 2
@@ -23,6 +27,10 @@ class ViewController: UIViewController {
         let imageView = UIImage(named: "banner_logo") as UIImage?
         self.navigationItem.titleView = UIImageView(image: imageView)
         CheckIfHasVisit(callBack: hasVisitSegue)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        lineDrawer.drawLines(lineMarkersOne, durationInSeconds: 3.0)
     }
     
     func hasVisitSegue(data:NSDictionary){

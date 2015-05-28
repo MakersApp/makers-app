@@ -10,8 +10,12 @@ import UIKit
 
 class Scene4ViewController: UIViewController {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        welcomeLabel.layer.borderWidth = 2
+        welcomeLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
+
         println("in Scene4ViewController")
         CheckIfCheckedIn(checkinCallback: updateDisplay)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeaconagain", name: "hit beacon again", object: nil)
@@ -24,13 +28,10 @@ class Scene4ViewController: UIViewController {
     }
     
     @IBOutlet weak var hostName: UILabel!
-    @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var headView: UIImageView!
     func updateDisplay(data:NSDictionary){
         let hostname: String = data["team_member"] as! String
         hostName.text = hostname
-        let username: String = data["username"] as! String
-        userName.text = username
         headView.image = UIImage(named: (hostname))
         
     }

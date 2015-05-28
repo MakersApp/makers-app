@@ -17,12 +17,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>000FD7246366E8E6304F1657</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>08C838FED0A5B778F6726F79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8577BADD6B26D5316DC4F186</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A141FD7C73BE2C450EF707F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

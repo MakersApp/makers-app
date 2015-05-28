@@ -17,8 +17,15 @@ class OkViewController: UIViewController {
     
     @IBOutlet weak var teamNameLabel: UILabel!
     
+    @IBOutlet weak var hostName: UILabel!
+    
+    @IBOutlet weak var hostHead: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameLabel.layer.borderWidth = 2
+        userNameLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
+
         userNameLabel.layer.borderWidth = 2
         userNameLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeacon", name: "some string", object: nil)
@@ -29,12 +36,14 @@ class OkViewController: UIViewController {
         let namestr = data["username"] as! String
         userNameLabel.text = "Thanks, \(namestr)!"
         
-        let str = data["team_member"] as! String
-        if str != "unknown" && str != "event" {
-            teamNameLabel.text = "We will let \(str) know when you arrive."
+        let hostNamestr = data["team_member"] as! String
+        if hostNamestr == "Other" || hostNamestr == "Event" {
+            hostName.hidden = true
         } else {
-            teamNameLabel.text = "We will notify a member of staff when you arrive."
+            hostName.text = hostNamestr
         }
+        
+        hostHead.image =  UIImage(named: (hostNamestr))
     }
     
     func hitbeacon(){
