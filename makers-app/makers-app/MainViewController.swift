@@ -9,19 +9,26 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet var lineMarkers: [UIButton]!
     
     var userName: String!
     var teamMember: String!
+    var lineDrawer: LineDrawer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
         self.headerImage.alpha = 0.0
         greetingText.text = "Who are you meeting?"
         greetingText.layer.borderWidth = 2
         greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
+    }
+    
+    override func viewDidLayoutSubviews() {
+        lineDrawer.drawLines(lineMarkers, durationInSeconds: 7.0)
     }
 
     @IBAction func nameSelect(sender: UIButton) {

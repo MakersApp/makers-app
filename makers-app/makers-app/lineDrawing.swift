@@ -58,7 +58,7 @@ class LineDrawer {
     func animateLineDrawing(duration: Double = 7.0) {
         let lineToDraw = CAShapeLayer()
         lineToDraw.path = line().CGPath
-        lineToDraw.lineWidth = 1.0
+        lineToDraw.lineWidth = 2.0
         lineToDraw.strokeColor = UIColor.lightGrayColor().CGColor
         lineToDraw.fillColor = UIColor.clearColor().CGColor
         
