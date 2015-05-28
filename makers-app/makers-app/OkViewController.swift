@@ -10,8 +10,13 @@ import UIKit
 
 class OkViewController: UIViewController {
     
+    var lineDrawer: LineDrawer!
+    var linesDrawn = false
+    
     var userName: String!
     var teamMember: String!
+    
+    @IBOutlet var lineMarkers: [UIButton]!
     
     @IBOutlet weak var userNameLabel: UILabel!
     
@@ -23,6 +28,8 @@ class OkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
+        lineDrawer.processMarkers(lineMarkers)
         userNameLabel.layer.borderWidth = 2
         userNameLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
 
@@ -32,6 +39,14 @@ class OkViewController: UIViewController {
         
         CheckIfHasVisit(callBack: getTeamMember)
     }
+    
+    override func viewDidLayoutSubviews() {
+        if linesDrawn == false {
+        lineDrawer.drawLines(lineMarkers, durationInSeconds: 6.0)
+            linesDrawn = true
+        }
+    }
+    
     func getTeamMember(data:NSDictionary){
         let namestr = data["username"] as! String
         userNameLabel.text = "Thanks, \(namestr)!"

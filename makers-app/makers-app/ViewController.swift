@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var lineDrawer: LineDrawer!
+    var linesDrawn = false
 
     @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var nameInput: UITextField!
@@ -34,7 +35,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        lineDrawer.drawLines(lineMarkersOne, durationInSeconds: 1.7)
+        if linesDrawn == false {
+            lineDrawer.drawLines(lineMarkersOne, durationInSeconds: 1.7)
+            linesDrawn = true
+        }
     }
     
     func hasVisitSegue(data:NSDictionary){
