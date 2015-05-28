@@ -7,8 +7,7 @@
 - The design uses a custom built framework to programmtically draw lines in XCode, providing a subtle and engaging user interface. The lines  represent the journey that visitors will take - especially if their visit leads to them coming on the course.
 - Powered by a Rails API back end.
 
-<img align="middle" src="https://github.com/MakersApp/assets/blob/master/wireframes/App_page1_SubmitName.jpg">
-<img align="middle" src="https://github.com/MakersApp/assets/blob/master/wireframes/App_page2_ChooseHost.jpg">
+<img src="https://github.com/MakersApp/assets/blob/master/wireframes/App_page1_SubmitName.jpg"><img src="https://github.com/MakersApp/assets/blob/master/wireframes/App_page2_ChooseHost.jpg">
 
 # User stories
 As a visitor to Makers Academy
