@@ -24,6 +24,7 @@
 		84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F241B14A54A00EB6DDB /* NewVisit.swift */; };
 		84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F261B14A6F900EB6DDB /* NewUser.swift */; };
 		84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */; };
+		B2F610281B16F7B700EE94B2 /* GItHubLogoGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F610271B16F7B700EE94B2 /* GItHubLogoGrey.png */; };
 		BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */; };
 		BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7F39051B10B6D400CAECB3 /* OkViewController.swift */; };
 		BF7F39081B10D1DF00CAECB3 /* eyeTestMatchers.js in Resources */ = {isa = PBXBuildFile; fileRef = BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */; };
@@ -74,6 +75,7 @@
 		84C40F261B14A6F900EB6DDB /* NewUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene4ViewController.swift; sourceTree = "<group>"; };
 		B0153830F358054F1E3F3642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F610271B16F7B700EE94B2 /* GItHubLogoGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GItHubLogoGrey.png; sourceTree = "<group>"; };
 		BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BF7F39051B10B6D400CAECB3 /* OkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OkViewController.swift; sourceTree = "<group>"; };
 		BF7F39071B10D1DF00CAECB3 /* eyeTestMatchers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eyeTestMatchers.js; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				35124A9B1B160470000BA567 /* Arfah.png */,
 				35124A9C1B160470000BA567 /* Event.png */,
 				35124A9D1B160470000BA567 /* Evgeny.png */,
+				B2F610271B16F7B700EE94B2 /* GItHubLogoGrey.png */,
 				35124A9E1B160470000BA567 /* Jordan.png */,
 				35124A9F1B160470000BA567 /* Nikesh.png */,
 				35124AA01B160470000BA567 /* Ruben.png */,
@@ -316,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F610281B16F7B700EE94B2 /* GItHubLogoGrey.png in Resources */,
 				BFD7A0041B0E247600DD4346 /* Main.storyboard in Resources */,
 				BFD7A0271B0E3A3200DD4346 /* ma2.png in Resources */,
 				BFD7A0091B0E247600DD4346 /* LaunchScreen.xib in Resources */,
