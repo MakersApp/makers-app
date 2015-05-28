@@ -10,9 +10,15 @@ import UIKit
 
 class Scene4ViewController: UIViewController {
     
+    @IBOutlet var lineMarkers: [UIButton]!
+    var lineDrawer: LineDrawer!
+    var linesDrawn = false
+
     @IBOutlet weak var welcomeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
+        lineDrawer.processMarkers(lineMarkers)
         welcomeLabel.layer.borderWidth = 2
         welcomeLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
 
@@ -20,6 +26,13 @@ class Scene4ViewController: UIViewController {
         CheckIfCheckedIn(checkinCallback: updateDisplay)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeaconagain", name: "hit beacon again", object: nil)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if linesDrawn == false {
+            lineDrawer.drawLines(lineMarkers, durationInSeconds: 5.5)
+            linesDrawn = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
