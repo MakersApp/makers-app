@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var nameInput: UITextField!
+    @IBOutlet weak var headerImage: UIImageView!
     
     @IBOutlet var lineMarkersOne: [UIButton]!
     @IBOutlet var lineMarkersTwo: [UIButton]!
@@ -53,6 +54,9 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.headerImage.alpha = 0.0
+            }, completion: nil)
         if var mainViewController = segue.destinationViewController as? MainViewController {
             mainViewController.userName = nameInput.text
         }

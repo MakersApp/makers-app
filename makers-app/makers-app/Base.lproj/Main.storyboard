@@ -222,6 +222,7 @@
                     </view>
                     <connections>
                         <outlet property="greetingText" destination="zDo-KT-fm3" id="Z1Q-4i-CmY"/>
+                        <outlet property="headerImage" destination="URJ-9i-p61" id="IbS-dt-kj2"/>
                         <outlet property="nameInput" destination="VXc-nx-YCZ" id="LGy-ty-3f2"/>
                         <outletCollection property="lineMarkersOne" destination="4Cq-US-0Pc" collectionClass="NSMutableArray" id="67F-jn-81Z"/>
                         <outletCollection property="lineMarkersOne" destination="6ow-Zx-b2j" collectionClass="NSMutableArray" id="J6b-yH-k37"/>
@@ -377,8 +378,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="5Sl-ry-Jva"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-P9-qDI">
-                                <rect key="frame" x="180" y="242" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-P9-qDI">
+                                <rect key="frame" x="187" y="242" width="37" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Nikesh">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -388,8 +389,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Gng-az-L6x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5C-Cn-IzO">
-                                <rect key="frame" x="370" y="242" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5C-Cn-IzO">
+                                <rect key="frame" x="376" y="242" width="38" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Jordan">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -399,8 +400,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Iv8-Z9-GQR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-f0-Ygd">
-                                <rect key="frame" x="180" y="340" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-f0-Ygd">
+                                <rect key="frame" x="185" y="340" width="40" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Evgeny">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -410,8 +411,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="ogx-of-PjC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yID-v8-Gg6">
-                                <rect key="frame" x="275" y="340" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yID-v8-Gg6">
+                                <rect key="frame" x="283" y="340" width="34" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Ruben">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -421,8 +422,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Lmd-RD-jjR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-zc-lI9">
-                                <rect key="frame" x="370" y="340" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-zc-lI9">
+                                <rect key="frame" x="380" y="340" width="30" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Will">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -432,8 +433,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="aTd-sP-TWA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDK-lG-kFO">
-                                <rect key="frame" x="190" y="442" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDK-lG-kFO">
+                                <rect key="frame" x="190" y="442" width="30" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Event">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -443,8 +444,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="1YY-iw-cfb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EI-RE-C26">
-                                <rect key="frame" x="275" y="442" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EI-RE-C26">
+                                <rect key="frame" x="285" y="442" width="30" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Spike">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -454,8 +455,8 @@
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="8NY-kZ-N0c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-TU-i52">
-                                <rect key="frame" x="370" y="442" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-TU-i52">
+                                <rect key="frame" x="379" y="442" width="32" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Other">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -476,8 +477,8 @@
                                 <color key="textColor" red="0.67450980390000004" green="0.1019607843" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE2-GN-n1f">
-                                <rect key="frame" x="275" y="242" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE2-GN-n1f">
+                                <rect key="frame" x="284" y="242" width="32" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <state key="normal" title="Arfah">
                                     <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -534,6 +535,7 @@
                     </view>
                     <connections>
                         <outlet property="greetingText" destination="xZ7-hh-uDZ" id="b6L-ll-OSr"/>
+                        <outlet property="headerImage" destination="4od-2s-p71" id="EPA-gY-czy"/>
                         <segue destination="p9s-gp-JIt" kind="custom" identifier="showOkPage" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="eGu-9U-AUA"/>
                     </connections>
                 </viewController>
@@ -1176,7 +1178,7 @@ Do you have any questions for us?</string>
         <image name="crosshairs.png" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FUf-gL-TrP"/>
+        <segue reference="eGu-9U-AUA"/>
         <segue reference="JM4-kp-cyJ"/>
     </inferredMetricsTieBreakers>
 </document>

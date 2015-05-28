@@ -11,12 +11,14 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var greetingText: UILabel!
+    @IBOutlet weak var headerImage: UIImageView!
     
     var userName: String!
     var teamMember: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.headerImage.alpha = 0.0
         greetingText.text = "Who are you meeting?"
         greetingText.layer.borderWidth = 2
         greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
@@ -34,6 +36,16 @@ class MainViewController: UIViewController {
     
     func processResponse(responseData: NSDictionary) {
         performSegueWithIdentifier("showOkPage", sender: nil)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
+    }
+    
+    func showHeader() {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.headerImage.alpha = 1.0
+            }, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
