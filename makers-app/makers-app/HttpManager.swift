@@ -16,7 +16,9 @@ class HttpManager {
       .responseJSON { (_, _, JSON, _) in
         if let object = JSON as? NSDictionary {
           callBack(data: object)
-        } 
+        } else {
+          println("You need to be connected to the internet, fool")
+        }
     }
   }
 
