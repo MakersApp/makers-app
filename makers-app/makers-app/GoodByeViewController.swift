@@ -11,15 +11,40 @@ import Foundation
 
 class GoodByeViewController: UIViewController {
 
+    @IBOutlet weak var headerImage: UIImageView!
+    
+    @IBOutlet var lineMarkers: [UIButton]!
+    var lineDrawer: LineDrawer!
+    var linesDrawn = false
+    
     @IBOutlet weak var goodbyeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
+        lineDrawer.processMarkers(lineMarkers)
         goodbyeLabel.layer.borderWidth = 2
         goodbyeLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
         
 
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if linesDrawn == false {
+            lineDrawer.drawLines(lineMarkers, durationInSeconds: 3.5)
+            linesDrawn = true
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
+    }
+    
+    func showHeader() {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.headerImage.alpha = 1.0
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

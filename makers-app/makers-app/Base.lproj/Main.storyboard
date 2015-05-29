@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VCQ-u9-mE6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -44,7 +44,7 @@
                                 <color key="textColor" red="0.67450980392156867" green="0.10196078431372549" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="URJ-9i-p61">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="URJ-9i-p61">
                                 <rect key="frame" x="0.0" y="20" width="235" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="4hm-uA-C85"/>
@@ -262,7 +262,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="4od-2s-p71">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4od-2s-p71">
                                 <rect key="frame" x="0.0" y="20" width="235" height="53"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njj-5l-c86">
@@ -717,7 +717,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-76-CQy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-76-CQy">
                                 <rect key="frame" x="0.0" y="28" width="235" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="VDo-AC-8sc"/>
@@ -736,7 +736,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Makers Academy 50-52 Commercial Street London E1 6LT" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="w3r-Yi-8L9">
-                                <rect key="frame" x="218" y="464" width="222" height="41"/>
+                                <rect key="frame" x="218" y="468" width="222" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="222" id="b5r-Vl-Cfh"/>
                                 </constraints>
@@ -765,7 +765,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nikesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-Ru-Kdx">
-                                <rect key="frame" x="278" y="418" width="44" height="19"/>
+                                <rect key="frame" x="277" y="422" width="46" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="dBe-Dq-ED4"/>
                                 </constraints>
@@ -774,9 +774,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nikesh.png" translatesAutoresizingMaskIntoConstraints="NO" id="LM3-o6-NYJ">
-                                <rect key="frame" x="250" y="308" width="100" height="96"/>
+                                <rect key="frame" x="250" y="308" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="Cli-3R-G4i"/>
+                                    <constraint firstAttribute="height" constant="100" id="Cli-3R-G4i"/>
                                     <constraint firstAttribute="width" constant="100" id="TdF-Se-7lb"/>
                                 </constraints>
                             </imageView>
@@ -795,35 +795,35 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlO-g4-WYf">
-                                <rect key="frame" x="16" y="345" width="21" height="21"/>
+                                <rect key="frame" x="16" y="347" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="F"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8O-f3-VQV">
-                                <rect key="frame" x="419" y="345" width="21" height="21"/>
+                                <rect key="frame" x="419" y="347" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="G"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjz-QY-FQ4">
-                                <rect key="frame" x="419" y="435" width="21" height="21"/>
+                                <rect key="frame" x="419" y="439" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="H"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X2-WZ-s6l">
-                                <rect key="frame" x="218" y="435" width="21" height="21"/>
+                                <rect key="frame" x="218" y="439" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="I"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRC-Cz-g1A">
-                                <rect key="frame" x="218" y="495" width="21" height="21"/>
+                                <rect key="frame" x="218" y="497" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="J"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -837,7 +837,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-3k-W8g">
-                                <rect key="frame" x="446" y="495" width="21" height="21"/>
+                                <rect key="frame" x="446" y="497" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="K"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -930,6 +930,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="headerImage" destination="0HF-76-CQy" id="s9h-fE-Ns1"/>
                         <outlet property="hostHead" destination="LM3-o6-NYJ" id="exd-VT-xoB"/>
                         <outlet property="hostName" destination="SzH-Ru-Kdx" id="NnN-BH-kuv"/>
                         <outlet property="userNameLabel" destination="jDH-x0-MGz" id="1g1-F8-uQq"/>
@@ -962,7 +963,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Y8-Sy-0Oy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Y8-Sy-0Oy">
                                 <rect key="frame" x="0.0" y="26" width="235" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="dfN-QX-hVp"/>
@@ -1199,6 +1200,7 @@
                     <navigationItem key="navigationItem" id="u7r-ei-Ywh"/>
                     <connections>
                         <outlet property="headView" destination="Gel-PF-DVe" id="jsN-Zv-ZnC"/>
+                        <outlet property="headerImage" destination="0Y8-Sy-0Oy" id="peT-Dc-Qp3"/>
                         <outlet property="hostName" destination="TxJ-6g-Bqu" id="sXa-x7-Ht5"/>
                         <outlet property="welcomeLabel" destination="IFz-eq-8Px" id="kcg-pT-BBn"/>
                         <outletCollection property="lineMarkers" destination="Fch-AM-ZhR" collectionClass="NSMutableArray" id="QuY-RA-mD8"/>
@@ -1222,7 +1224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTA-46-INt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="1128"/>
+            <point key="canvasLocation" x="667" y="1069"/>
         </scene>
         <!--Question1 View Controller-->
         <scene sceneID="YYC-Lc-gpb">
@@ -1236,13 +1238,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please give us some feedback:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-mm-CFm">
-                                <rect key="frame" x="160" y="179" width="195" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give us some feedback:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-mm-CFm">
+                                <rect key="frame" x="160" y="179" width="194" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-Kh-kDN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-Kh-kDN">
                                 <rect key="frame" x="0.0" y="28" width="235" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="DuR-bq-bi8"/>
@@ -1366,15 +1368,8 @@ Do you have any questions for us?</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2B-Ea-cgV">
-                                <rect key="frame" x="419" y="165" width="21" height="21"/>
+                                <rect key="frame" x="563" y="165" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="E"/>
-                                <state key="normal" backgroundImage="crosshairs.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-n0-9C3">
-                                <rect key="frame" x="160" y="467" width="21" height="21"/>
-                                <accessibility key="accessibilityConfiguration" label="H"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1387,14 +1382,14 @@ Do you have any questions for us?</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-W5-S5q">
-                                <rect key="frame" x="419" y="287" width="21" height="21"/>
+                                <rect key="frame" x="563" y="287" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="F"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79C-h0-Nnr">
-                                <rect key="frame" x="160" y="287" width="21" height="21"/>
+                                <rect key="frame" x="16" y="287" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="G"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1403,6 +1398,13 @@ Do you have any questions for us?</string>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUk-eE-8w9">
                                 <rect key="frame" x="446" y="590" width="21" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="J"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-n0-9C3">
+                                <rect key="frame" x="16" y="467" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="H"/>
                                 <state key="normal" backgroundImage="crosshairs.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1431,12 +1433,15 @@ Do you have any questions for us?</string>
                             <constraint firstAttribute="centerX" secondItem="zeB-fU-TLV" secondAttribute="centerX" id="Tzb-cS-y0R"/>
                             <constraint firstItem="zeB-fU-TLV" firstAttribute="top" secondItem="ikn-sH-DMK" secondAttribute="bottom" constant="24" id="Um1-Mt-cYS"/>
                             <constraint firstItem="zeB-fU-TLV" firstAttribute="centerX" secondItem="gz7-ZS-IhB" secondAttribute="centerX" id="V43-g5-pXA"/>
+                            <constraint firstItem="G2B-Ea-cgV" firstAttribute="trailing" secondItem="Evl-BF-cXP" secondAttribute="trailingMargin" id="aMt-8J-pdj"/>
                             <constraint firstItem="KOM-Kh-kDN" firstAttribute="leading" secondItem="Evl-BF-cXP" secondAttribute="leadingMargin" constant="-16" id="d4q-pm-H5V"/>
                             <constraint firstItem="XAv-ge-TrV" firstAttribute="top" secondItem="zeB-fU-TLV" secondAttribute="bottom" constant="8" id="dDp-mn-hmC"/>
                             <constraint firstItem="c9e-mm-CFm" firstAttribute="leading" secondItem="gz7-ZS-IhB" secondAttribute="leading" id="dkm-ba-wwG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yio-xJ-nFR" secondAttribute="trailing" constant="117" id="dod-zn-kfu"/>
                             <constraint firstItem="gz7-ZS-IhB" firstAttribute="trailing" secondItem="G2B-Ea-cgV" secondAttribute="trailing" id="e0F-sy-uFS"/>
+                            <constraint firstItem="79C-h0-Nnr" firstAttribute="leading" secondItem="Evl-BF-cXP" secondAttribute="leadingMargin" id="eF8-AU-KPY"/>
                             <constraint firstItem="hbO-tx-Nt1" firstAttribute="top" secondItem="WUk-eE-8w9" secondAttribute="bottom" constant="-11" id="eJi-FJ-Exb"/>
+                            <constraint firstItem="79C-h0-Nnr" firstAttribute="centerX" secondItem="Vc1-n0-9C3" secondAttribute="centerX" id="ecP-uv-GRO"/>
                             <constraint firstItem="tRX-7Z-Hpe" firstAttribute="centerX" secondItem="ikn-sH-DMK" secondAttribute="centerX" id="fxA-zN-N33"/>
                             <constraint firstItem="Vc1-n0-9C3" firstAttribute="top" secondItem="gz7-ZS-IhB" secondAttribute="bottom" constant="79" id="gVs-D5-z5y"/>
                             <constraint firstItem="gz7-ZS-IhB" firstAttribute="top" secondItem="c9e-mm-CFm" secondAttribute="bottom" constant="8" id="gnx-rE-sgm"/>
@@ -1454,6 +1459,13 @@ Do you have any questions for us?</string>
                             <constraint firstItem="gz7-ZS-IhB" firstAttribute="centerX" secondItem="LIW-2w-t9H" secondAttribute="centerX" id="vpF-yq-ful"/>
                             <constraint firstItem="PNJ-9L-nD4" firstAttribute="centerY" secondItem="ikn-sH-DMK" secondAttribute="centerY" id="zO9-sL-N7r"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="e0F-sy-uFS"/>
+                                <exclude reference="EJU-3X-c6q"/>
+                                <exclude reference="FUq-bs-xgK"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6KK-Yr-Ujv" appends="YES" id="gHc-Mv-7pL"/>
                         </connections>
@@ -1461,17 +1473,18 @@ Do you have any questions for us?</string>
                     <connections>
                         <outlet property="emailForm" destination="LIW-2w-t9H" id="GRm-Eg-W9a"/>
                         <outlet property="enjoyedVisit" destination="zeB-fU-TLV" id="YbB-bH-foi"/>
+                        <outlet property="headerImage" destination="KOM-Kh-kDN" id="EFz-8U-7xM"/>
                         <outlet property="questionForm" destination="gz7-ZS-IhB" id="n9i-iv-e5C"/>
-                        <outletCollection property="lineMarkers" destination="yio-xJ-nFR" collectionClass="NSMutableArray" id="dy8-fw-HRL"/>
-                        <outletCollection property="lineMarkers" destination="ikn-sH-DMK" id="hiF-ab-Zys"/>
-                        <outletCollection property="lineMarkers" destination="PNJ-9L-nD4" id="30p-d0-E0x"/>
-                        <outletCollection property="lineMarkers" destination="G2B-Ea-cgV" id="xhP-pI-hdc"/>
-                        <outletCollection property="lineMarkers" destination="PS1-W5-S5q" id="ypL-N5-p5r"/>
-                        <outletCollection property="lineMarkers" destination="XAv-ge-TrV" id="IOf-Dy-phv"/>
-                        <outletCollection property="lineMarkers" destination="79C-h0-Nnr" id="1pB-BN-cZy"/>
-                        <outletCollection property="lineMarkers" destination="Vc1-n0-9C3" id="sDs-P0-TvA"/>
-                        <outletCollection property="lineMarkers" destination="tRX-7Z-Hpe" id="GXA-Jh-EqX"/>
-                        <outletCollection property="lineMarkers" destination="WUk-eE-8w9" id="810-bj-saN"/>
+                        <outletCollection property="lineMarkers" destination="yio-xJ-nFR" collectionClass="NSMutableArray" id="CWX-Qc-SRl"/>
+                        <outletCollection property="lineMarkers" destination="ikn-sH-DMK" collectionClass="NSMutableArray" id="pB1-gw-tZn"/>
+                        <outletCollection property="lineMarkers" destination="PNJ-9L-nD4" collectionClass="NSMutableArray" id="mcO-h7-FYT"/>
+                        <outletCollection property="lineMarkers" destination="XAv-ge-TrV" collectionClass="NSMutableArray" id="G2T-4Q-caj"/>
+                        <outletCollection property="lineMarkers" destination="G2B-Ea-cgV" collectionClass="NSMutableArray" id="lNA-Nv-dQV"/>
+                        <outletCollection property="lineMarkers" destination="PS1-W5-S5q" collectionClass="NSMutableArray" id="yzV-f4-QfM"/>
+                        <outletCollection property="lineMarkers" destination="79C-h0-Nnr" collectionClass="NSMutableArray" id="2Uz-MY-s5c"/>
+                        <outletCollection property="lineMarkers" destination="Vc1-n0-9C3" collectionClass="NSMutableArray" id="lCv-EF-yUW"/>
+                        <outletCollection property="lineMarkers" destination="tRX-7Z-Hpe" collectionClass="NSMutableArray" id="IlZ-wn-SkH"/>
+                        <outletCollection property="lineMarkers" destination="WUk-eE-8w9" collectionClass="NSMutableArray" id="K8e-vx-PvP"/>
                         <segue destination="sEy-d8-ze7" kind="custom" identifier="question1" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="sUw-jR-6d7"/>
                     </connections>
                 </viewController>
@@ -1482,7 +1495,7 @@ Do you have any questions for us?</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1525" y="1128"/>
+            <point key="canvasLocation" x="1443" y="1069"/>
         </scene>
         <!--Scene 6slider View Controller-->
         <scene sceneID="p78-ob-SJI">
@@ -1507,7 +1520,7 @@ Do you have any questions for us?</string>
                                 <color key="textColor" red="0.67450980390000004" green="0.1019607843" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-yZ-eKl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-yZ-eKl">
                                 <rect key="frame" x="0.0" y="28" width="235" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="0Cx-Ul-Opl"/>
@@ -1526,8 +1539,8 @@ Do you have any questions for us?</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bF8-0I-AU8">
-                                <rect key="frame" x="158" y="231" width="284" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bF8-0I-AU8">
+                                <rect key="frame" x="158" y="232" width="284" height="31"/>
                                 <color key="tintColor" red="0.67450980392156867" green="0.10196078431372549" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="sEy-d8-ze7" eventType="valueChanged" id="ccc-ac-lRq"/>
@@ -1550,8 +1563,8 @@ Do you have any questions for us?</string>
                                     <segue destination="KUD-F9-FbO" kind="custom" identifier="question2segue" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="JM4-kp-cyJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-Tt-vhw">
-                                <rect key="frame" x="269" y="285" width="62" height="130"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-Tt-vhw">
+                                <rect key="frame" x="269" y="286" width="62" height="130"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="100"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1572,37 +1585,266 @@ Do you have any questions for us?</string>
                                     <action selector="noThanks:" destination="sEy-d8-ze7" eventType="touchUpInside" id="xhC-hU-MGQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGM-yH-ZkF">
+                                <rect key="frame" x="446" y="-11" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-FN-DnM">
+                                <rect key="frame" x="446" y="83" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdq-jo-yIU">
+                                <rect key="frame" x="290" y="83" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="C"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSM-qB-Wxf">
+                                <rect key="frame" x="290" y="165" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="D"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDp-AA-CKC">
+                                <rect key="frame" x="563" y="165" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="E"/>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uod-vH-h0O">
+                                <rect key="frame" x="563" y="286" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="F"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BVy-uB-F3x"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BVy-uB-F3x"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVc-Ue-0rx">
+                                <rect key="frame" x="16" y="286" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="G"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gDO-Nx-aBY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gDO-Nx-aBY"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9it-8a-2v1">
+                                <rect key="frame" x="16" y="395" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="H"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fGK-uy-y0m"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fGK-uy-y0m"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBb-78-K3W">
+                                <rect key="frame" x="446" y="395" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="I"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OPR-K2-MoV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OPR-K2-MoV"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkN-bc-wZS">
+                                <rect key="frame" x="446" y="461" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="J"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="K2c-2n-M7p"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K2c-2n-M7p"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-2V-dH3">
+                                <rect key="frame" x="563" y="461" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="K"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Lz3-WK-gV6"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lz3-WK-gV6"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZm-Gw-5Y5">
+                                <rect key="frame" x="563" y="506" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="L"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bZU-29-ENY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bZU-29-ENY"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqE-Fd-9lg">
+                                <rect key="frame" x="446" y="590" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="N"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1ah-GO-sdt"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1ah-GO-sdt"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-tx-Z6F">
+                                <rect key="frame" x="448" y="506" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="M"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OuG-Bf-rqa"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OuG-Bf-rqa"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bF8-0I-AU8" firstAttribute="top" secondItem="lZq-bt-NrD" secondAttribute="bottom" constant="16" id="0ga-FA-8TR"/>
+                            <constraint firstItem="mBb-78-K3W" firstAttribute="centerY" secondItem="9it-8a-2v1" secondAttribute="centerY" id="4LI-Ki-Apu"/>
+                            <constraint firstItem="mBb-78-K3W" firstAttribute="centerX" secondItem="KkN-bc-wZS" secondAttribute="centerX" id="5FT-il-1YL"/>
+                            <constraint firstItem="mBb-78-K3W" firstAttribute="centerX" secondItem="Ukb-FN-DnM" secondAttribute="centerX" id="84s-hw-0b1"/>
                             <constraint firstItem="omX-Zo-k2Z" firstAttribute="top" secondItem="0A8-Uk-PAA" secondAttribute="bottom" constant="323" id="Ajz-D0-hBC"/>
+                            <constraint firstItem="PVc-Ue-0rx" firstAttribute="centerY" secondItem="uod-vH-h0O" secondAttribute="centerY" id="FCo-tF-0Zg"/>
+                            <constraint firstItem="bdq-jo-yIU" firstAttribute="centerX" secondItem="0A8-Uk-PAA" secondAttribute="centerX" constant="0.5" id="Fee-WZ-dOS"/>
+                            <constraint firstItem="uod-vH-h0O" firstAttribute="top" secondItem="ya5-Tt-vhw" secondAttribute="top" id="HnM-vy-9sc"/>
                             <constraint firstItem="ya5-Tt-vhw" firstAttribute="top" secondItem="bF8-0I-AU8" secondAttribute="bottom" constant="24" id="JFV-Ns-gyH"/>
                             <constraint firstItem="EHM-xa-hNx" firstAttribute="leading" secondItem="lZq-bt-NrD" secondAttribute="leading" id="JSr-JZ-aNd"/>
+                            <constraint firstItem="bdq-jo-yIU" firstAttribute="centerY" secondItem="Ukb-FN-DnM" secondAttribute="centerY" id="L17-qF-IkJ"/>
+                            <constraint firstItem="SDp-AA-CKC" firstAttribute="trailing" secondItem="6I2-wZ-m1c" secondAttribute="trailingMargin" id="L85-E8-wRl"/>
+                            <constraint firstItem="KkN-bc-wZS" firstAttribute="centerY" secondItem="6mT-2V-dH3" secondAttribute="centerY" id="LBQ-s2-VCP"/>
+                            <constraint firstItem="nGM-yH-ZkF" firstAttribute="top" secondItem="5MF-AJ-qtZ" secondAttribute="bottom" constant="-31" id="MMV-9j-w11"/>
                             <constraint firstItem="zTk-yZ-eKl" firstAttribute="top" secondItem="5MF-AJ-qtZ" secondAttribute="bottom" constant="8" id="QA5-Q3-L9A"/>
+                            <constraint firstItem="PVc-Ue-0rx" firstAttribute="centerX" secondItem="9it-8a-2v1" secondAttribute="centerX" id="QVJ-lm-5BT"/>
+                            <constraint firstItem="FqE-Fd-9lg" firstAttribute="centerX" secondItem="mBb-78-K3W" secondAttribute="centerX" id="QXr-xn-m4m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nGM-yH-ZkF" secondAttribute="trailing" constant="117" id="Qxd-wN-K6l"/>
+                            <constraint firstItem="Ukb-FN-DnM" firstAttribute="centerX" secondItem="nGM-yH-ZkF" secondAttribute="centerX" id="RFh-Zk-hx4"/>
+                            <constraint firstItem="AZm-Gw-5Y5" firstAttribute="top" secondItem="omX-Zo-k2Z" secondAttribute="bottom" constant="-4" id="S61-N8-HAo"/>
+                            <constraint firstItem="9it-8a-2v1" firstAttribute="top" secondItem="PVc-Ue-0rx" secondAttribute="bottom" constant="88" id="TWF-bW-fvp"/>
+                            <constraint firstItem="uod-vH-h0O" firstAttribute="centerX" secondItem="SDp-AA-CKC" secondAttribute="centerX" id="Tpa-jE-gVc"/>
+                            <constraint firstItem="KOV-w6-mYP" firstAttribute="top" secondItem="FqE-Fd-9lg" secondAttribute="bottom" constant="-11" id="TvL-97-ufQ"/>
                             <constraint firstItem="EHM-xa-hNx" firstAttribute="top" secondItem="0A8-Uk-PAA" secondAttribute="bottom" constant="23" id="TwC-OE-GgO"/>
                             <constraint firstItem="0A8-Uk-PAA" firstAttribute="leading" secondItem="EHM-xa-hNx" secondAttribute="leading" id="UVM-f0-H7u"/>
+                            <constraint firstItem="6mT-2V-dH3" firstAttribute="centerX" secondItem="AZm-Gw-5Y5" secondAttribute="centerX" id="V1e-0r-L0R"/>
                             <constraint firstItem="ya5-Tt-vhw" firstAttribute="centerX" secondItem="bF8-0I-AU8" secondAttribute="centerX" id="WBc-kB-LFO"/>
+                            <constraint firstItem="vSM-qB-Wxf" firstAttribute="centerY" secondItem="SDp-AA-CKC" secondAttribute="centerY" id="WD2-N7-O5T"/>
+                            <constraint firstItem="pVg-tx-Z6F" firstAttribute="centerX" secondItem="KkN-bc-wZS" secondAttribute="centerX" constant="2" id="WX1-CN-mxn"/>
+                            <constraint firstItem="pVg-tx-Z6F" firstAttribute="centerY" secondItem="AZm-Gw-5Y5" secondAttribute="centerY" id="XUR-g2-L1I"/>
+                            <constraint firstItem="omX-Zo-k2Z" firstAttribute="top" secondItem="KkN-bc-wZS" secondAttribute="bottom" constant="-2" id="Yck-Ql-w1F"/>
+                            <constraint firstItem="vSM-qB-Wxf" firstAttribute="centerY" secondItem="SDp-AA-CKC" secondAttribute="centerY" constant="6" id="ZC8-JB-7Bn"/>
+                            <constraint firstItem="KOV-w6-mYP" firstAttribute="top" secondItem="uod-vH-h0O" secondAttribute="bottom" constant="294" id="cNw-9N-DLj"/>
+                            <constraint firstItem="9it-8a-2v1" firstAttribute="bottom" secondItem="ya5-Tt-vhw" secondAttribute="bottom" id="dhE-B3-OqV"/>
                             <constraint firstItem="2ti-hV-PWe" firstAttribute="top" secondItem="0A8-Uk-PAA" secondAttribute="bottom" constant="323" id="ert-zM-N6N"/>
+                            <constraint firstItem="vSM-qB-Wxf" firstAttribute="top" secondItem="0A8-Uk-PAA" secondAttribute="bottom" constant="8" id="etP-Kw-pmC"/>
+                            <constraint firstItem="0A8-Uk-PAA" firstAttribute="top" secondItem="Ukb-FN-DnM" secondAttribute="bottom" constant="13" id="geh-Ts-LBB"/>
+                            <constraint firstItem="KOV-w6-mYP" firstAttribute="top" secondItem="9it-8a-2v1" secondAttribute="bottom" constant="185" id="j9A-YP-ByK"/>
+                            <constraint firstItem="bdq-jo-yIU" firstAttribute="centerX" secondItem="vSM-qB-Wxf" secondAttribute="centerX" id="jhT-de-q1n"/>
                             <constraint firstItem="bF8-0I-AU8" firstAttribute="leading" secondItem="0A8-Uk-PAA" secondAttribute="leading" id="liY-rb-9wS"/>
                             <constraint firstItem="omX-Zo-k2Z" firstAttribute="trailing" secondItem="0A8-Uk-PAA" secondAttribute="trailing" id="mUo-mf-HZx"/>
+                            <constraint firstItem="uod-vH-h0O" firstAttribute="leading" secondItem="SDp-AA-CKC" secondAttribute="leading" id="ocd-Xu-FGN"/>
                             <constraint firstItem="2ti-hV-PWe" firstAttribute="leading" secondItem="0A8-Uk-PAA" secondAttribute="leading" id="pB6-N6-V4m"/>
                             <constraint firstItem="zTk-yZ-eKl" firstAttribute="leading" secondItem="6I2-wZ-m1c" secondAttribute="leadingMargin" constant="-16" id="pp2-kS-WXc"/>
                             <constraint firstAttribute="centerX" secondItem="0A8-Uk-PAA" secondAttribute="centerX" id="rOi-mO-LMr"/>
+                            <constraint firstItem="uod-vH-h0O" firstAttribute="centerX" secondItem="6mT-2V-dH3" secondAttribute="centerX" id="tnQ-TE-ghs"/>
                             <constraint firstItem="bF8-0I-AU8" firstAttribute="trailing" secondItem="0A8-Uk-PAA" secondAttribute="trailing" id="tvG-7Z-AQY"/>
                             <constraint firstItem="0A8-Uk-PAA" firstAttribute="top" secondItem="zTk-yZ-eKl" secondAttribute="bottom" constant="36" id="uhr-jW-6fc"/>
+                            <constraint firstItem="9it-8a-2v1" firstAttribute="leading" secondItem="PVc-Ue-0rx" secondAttribute="leading" id="wha-EC-eey"/>
                             <constraint firstItem="lZq-bt-NrD" firstAttribute="top" secondItem="EHM-xa-hNx" secondAttribute="bottom" constant="-2" id="xHb-X9-OlQ"/>
+                            <constraint firstItem="PVc-Ue-0rx" firstAttribute="leading" secondItem="6I2-wZ-m1c" secondAttribute="leadingMargin" id="xw1-SD-adQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZC8-JB-7Bn"/>
+                                <exclude reference="TWF-bW-fvp"/>
+                                <exclude reference="wha-EC-eey"/>
+                                <exclude reference="cNw-9N-DLj"/>
+                                <exclude reference="j9A-YP-ByK"/>
+                                <exclude reference="ocd-Xu-FGN"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="headerImage" destination="zTk-yZ-eKl" id="hLL-ee-wgh"/>
                         <outlet property="npsNumber" destination="ya5-Tt-vhw" id="xvQ-Jh-n3i"/>
                         <outlet property="slider6" destination="bF8-0I-AU8" id="vJd-zS-Ekd"/>
                         <outlet property="visitToday" destination="0A8-Uk-PAA" id="VDZ-C6-iD2"/>
+                        <outletCollection property="lineMarkers" destination="nGM-yH-ZkF" collectionClass="NSMutableArray" id="9bc-zr-cbb"/>
+                        <outletCollection property="lineMarkers" destination="Ukb-FN-DnM" collectionClass="NSMutableArray" id="GWE-3D-hHa"/>
+                        <outletCollection property="lineMarkers" destination="bdq-jo-yIU" collectionClass="NSMutableArray" id="LFE-dd-lLz"/>
+                        <outletCollection property="lineMarkers" destination="vSM-qB-Wxf" collectionClass="NSMutableArray" id="knS-TH-AEB"/>
+                        <outletCollection property="lineMarkers" destination="SDp-AA-CKC" collectionClass="NSMutableArray" id="EqK-l0-Ojc"/>
+                        <outletCollection property="lineMarkers" destination="uod-vH-h0O" collectionClass="NSMutableArray" id="9gi-nj-pJp"/>
+                        <outletCollection property="lineMarkers" destination="PVc-Ue-0rx" collectionClass="NSMutableArray" id="X2R-EK-pwp"/>
+                        <outletCollection property="lineMarkers" destination="9it-8a-2v1" collectionClass="NSMutableArray" id="bHA-K5-wVq"/>
+                        <outletCollection property="lineMarkers" destination="mBb-78-K3W" collectionClass="NSMutableArray" id="7gE-xh-YoM"/>
+                        <outletCollection property="lineMarkers" destination="KkN-bc-wZS" collectionClass="NSMutableArray" id="h84-qI-ye8"/>
+                        <outletCollection property="lineMarkers" destination="6mT-2V-dH3" collectionClass="NSMutableArray" id="Vjd-rA-ni6"/>
+                        <outletCollection property="lineMarkers" destination="AZm-Gw-5Y5" collectionClass="NSMutableArray" id="Bbt-PK-tY2"/>
+                        <outletCollection property="lineMarkers" destination="pVg-tx-Z6F" collectionClass="NSMutableArray" id="yam-wq-OFq"/>
+                        <outletCollection property="lineMarkers" destination="FqE-Fd-9lg" collectionClass="NSMutableArray" id="KuN-20-SrN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVM-pV-RpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="1163"/>
+            <point key="canvasLocation" x="2461" y="1122"/>
         </scene>
         <!--Good Bye View Controller-->
         <scene sceneID="aTz-R0-vho">
@@ -1616,7 +1858,7 @@ Do you have any questions for us?</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGG-f0-kTL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGG-f0-kTL">
                                 <rect key="frame" x="0.0" y="28" width="235" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="6QM-ck-rTa"/>
@@ -1637,7 +1879,7 @@ Do you have any questions for us?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We hope to see you again." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhL-Tk-XWL">
-                                <rect key="frame" x="160" y="179" width="174" height="19"/>
+                                <rect key="frame" x="160" y="227" width="174" height="19"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1712,34 +1954,203 @@ Do you have any questions for us?</string>
                                     <action selector="milena:" destination="KUD-F9-FbO" eventType="touchUpInside" id="le0-Bh-Cp5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-JH-cBR">
+                                <rect key="frame" x="446" y="-11" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cdi-BX-Ig1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cdi-BX-Ig1"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x41-Xc-rvb">
+                                <rect key="frame" x="446" y="76" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JK8-71-CnX"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JK8-71-CnX"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Px-V2-ovv">
+                                <rect key="frame" x="290" y="76" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="C"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mXT-am-nfh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mXT-am-nfh"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTR-fl-jId">
+                                <rect key="frame" x="290" y="198" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="D"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aqA-3b-rm3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aqA-3b-rm3"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-R2-qWi">
+                                <rect key="frame" x="339" y="198" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="E"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qix-Ss-3Ay"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qix-Ss-3Ay"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLW-xz-MSh">
+                                <rect key="frame" x="339" y="254" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="F"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lbg-hd-wx6"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lbg-hd-wx6"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5E-PO-RCW">
+                                <rect key="frame" x="127" y="254" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="G"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lMK-mo-xZd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lMK-mo-xZd"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-ja-gNB">
+                                <rect key="frame" x="127" y="198" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="H"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5lb-ia-z2V"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5lb-ia-z2V"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KM-DN-dqJ">
+                                <rect key="frame" x="290" y="198" width="21" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="I"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zr3-l3-214"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="crosshairs.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zr3-l3-214"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lGG-f0-kTL" firstAttribute="leading" secondItem="dq5-kx-VjK" secondAttribute="leadingMargin" constant="-16" id="1UR-CL-7Oj"/>
                             <constraint firstItem="R39-oQ-H38" firstAttribute="leading" secondItem="267-LU-dCF" secondAttribute="trailing" constant="40" id="33I-ES-uVG"/>
+                            <constraint firstItem="9iR-R2-qWi" firstAttribute="centerX" secondItem="jLW-xz-MSh" secondAttribute="centerX" id="5oE-No-7NW"/>
+                            <constraint firstItem="PhL-Tk-XWL" firstAttribute="leading" secondItem="z5E-PO-RCW" secondAttribute="trailing" constant="12" id="6ME-Z1-9gS"/>
                             <constraint firstItem="q8w-xE-Q32" firstAttribute="top" secondItem="yCN-ZZ-cwF" secondAttribute="bottom" constant="168" id="89Q-72-Qzx"/>
                             <constraint firstItem="yCN-ZZ-cwF" firstAttribute="leading" secondItem="PhL-Tk-XWL" secondAttribute="leading" id="8Rn-YT-o3q"/>
+                            <constraint firstItem="dTR-fl-jId" firstAttribute="centerY" secondItem="9iR-R2-qWi" secondAttribute="centerY" id="9Ge-wA-kyh"/>
+                            <constraint firstItem="1hn-ja-gNB" firstAttribute="centerY" secondItem="5KM-DN-dqJ" secondAttribute="centerY" id="C8q-tB-b6m"/>
+                            <constraint firstItem="0Px-V2-ovv" firstAttribute="centerX" secondItem="yCN-ZZ-cwF" secondAttribute="centerX" constant="0.5" id="FqG-k8-9O1"/>
+                            <constraint firstItem="dTR-fl-jId" firstAttribute="leading" secondItem="0Px-V2-ovv" secondAttribute="leading" id="IGf-ni-jEZ"/>
                             <constraint firstItem="yCN-ZZ-cwF" firstAttribute="top" secondItem="lGG-f0-kTL" secondAttribute="bottom" constant="36" id="Kip-xZ-6iN"/>
                             <constraint firstItem="R39-oQ-H38" firstAttribute="centerY" secondItem="267-LU-dCF" secondAttribute="centerY" id="MOf-1d-ABK"/>
                             <constraint firstItem="267-LU-dCF" firstAttribute="centerY" secondItem="iRO-bQ-J5q" secondAttribute="centerY" id="MUw-0z-jje"/>
                             <constraint firstItem="iRO-bQ-J5q" firstAttribute="leading" secondItem="zNj-dD-7bK" secondAttribute="trailing" constant="40" id="Mcv-Za-Mg0"/>
+                            <constraint firstItem="z5E-PO-RCW" firstAttribute="centerX" secondItem="1hn-ja-gNB" secondAttribute="centerX" id="NCL-Tr-xzL"/>
+                            <constraint firstItem="ruX-JH-cBR" firstAttribute="centerX" secondItem="x41-Xc-rvb" secondAttribute="centerX" id="QGe-uI-38D"/>
                             <constraint firstItem="267-LU-dCF" firstAttribute="leading" secondItem="iRO-bQ-J5q" secondAttribute="trailing" constant="40" id="XVd-S4-bk2"/>
-                            <constraint firstItem="PhL-Tk-XWL" firstAttribute="top" secondItem="yCN-ZZ-cwF" secondAttribute="bottom" constant="22" id="ZN3-Tg-4tL"/>
+                            <constraint firstItem="PhL-Tk-XWL" firstAttribute="top" secondItem="yCN-ZZ-cwF" secondAttribute="bottom" constant="70" id="ZN3-Tg-4tL"/>
+                            <constraint firstItem="dTR-fl-jId" firstAttribute="centerX" secondItem="0Px-V2-ovv" secondAttribute="centerX" id="aqE-dA-CBO"/>
+                            <constraint firstItem="ruX-JH-cBR" firstAttribute="top" secondItem="HJc-mZ-teO" secondAttribute="bottom" constant="-31" id="bTk-h2-C6Z"/>
+                            <constraint firstItem="PhL-Tk-XWL" firstAttribute="top" secondItem="dTR-fl-jId" secondAttribute="bottom" constant="8" id="bfM-K0-Bt2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ruX-JH-cBR" secondAttribute="trailing" constant="117" id="cCb-pi-S20"/>
+                            <constraint firstItem="yCN-ZZ-cwF" firstAttribute="top" secondItem="x41-Xc-rvb" secondAttribute="bottom" constant="20" id="dvF-Bt-uyW"/>
                             <constraint firstItem="lGG-f0-kTL" firstAttribute="top" secondItem="HJc-mZ-teO" secondAttribute="bottom" constant="8" id="fiE-BN-p7a"/>
+                            <constraint firstItem="dTR-fl-jId" firstAttribute="centerY" secondItem="1hn-ja-gNB" secondAttribute="centerY" id="gwS-c0-ewi"/>
+                            <constraint firstItem="0Px-V2-ovv" firstAttribute="centerY" secondItem="x41-Xc-rvb" secondAttribute="centerY" id="hOA-ro-mKw"/>
+                            <constraint firstItem="jLW-xz-MSh" firstAttribute="top" secondItem="PhL-Tk-XWL" secondAttribute="bottom" constant="8" id="hlE-Tv-rUv"/>
                             <constraint firstItem="zNj-dD-7bK" firstAttribute="centerY" secondItem="iRO-bQ-J5q" secondAttribute="centerY" id="hvL-XB-Lqe"/>
+                            <constraint firstItem="PhL-Tk-XWL" firstAttribute="trailing" secondItem="9iR-R2-qWi" secondAttribute="trailing" constant="-26" id="iQa-0Z-CWA"/>
                             <constraint firstAttribute="centerX" secondItem="yCN-ZZ-cwF" secondAttribute="centerX" id="n77-Pv-kuC"/>
                             <constraint firstItem="q8w-xE-Q32" firstAttribute="leading" secondItem="yCN-ZZ-cwF" secondAttribute="leading" id="nPp-qt-qKP"/>
                             <constraint firstItem="zNj-dD-7bK" firstAttribute="top" secondItem="q8w-xE-Q32" secondAttribute="bottom" constant="-52" id="o4w-WY-6qk"/>
+                            <constraint firstItem="z5E-PO-RCW" firstAttribute="centerY" secondItem="jLW-xz-MSh" secondAttribute="centerY" id="p4g-8j-OmU"/>
+                            <constraint firstItem="0Px-V2-ovv" firstAttribute="centerX" secondItem="5KM-DN-dqJ" secondAttribute="centerX" id="qmr-sa-G7V"/>
                             <constraint firstItem="q8w-xE-Q32" firstAttribute="leading" secondItem="zNj-dD-7bK" secondAttribute="leading" id="tQT-DI-MyQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IGf-ni-jEZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="goodbyeLabel" destination="yCN-ZZ-cwF" id="BPq-U5-Pcu"/>
+                        <outlet property="headerImage" destination="lGG-f0-kTL" id="Lpv-eK-jF8"/>
+                        <outletCollection property="lineMarkers" destination="ruX-JH-cBR" collectionClass="NSMutableArray" id="sDp-aB-yff"/>
+                        <outletCollection property="lineMarkers" destination="x41-Xc-rvb" collectionClass="NSMutableArray" id="97s-BH-aRf"/>
+                        <outletCollection property="lineMarkers" destination="0Px-V2-ovv" collectionClass="NSMutableArray" id="eqz-9l-pUV"/>
+                        <outletCollection property="lineMarkers" destination="5KM-DN-dqJ" collectionClass="NSMutableArray" id="Qmm-IE-A6F"/>
+                        <outletCollection property="lineMarkers" destination="9iR-R2-qWi" collectionClass="NSMutableArray" id="78Z-qC-EIO"/>
+                        <outletCollection property="lineMarkers" destination="jLW-xz-MSh" collectionClass="NSMutableArray" id="72L-3j-ULb"/>
+                        <outletCollection property="lineMarkers" destination="z5E-PO-RCW" collectionClass="NSMutableArray" id="wgY-OJ-CS0"/>
+                        <outletCollection property="lineMarkers" destination="1hn-ja-gNB" collectionClass="NSMutableArray" id="k4p-6E-1qf"/>
+                        <outletCollection property="lineMarkers" destination="dTR-fl-jId" collectionClass="NSMutableArray" id="qUS-2a-acs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFU-sA-qvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="1981"/>
+            <point key="canvasLocation" x="2012" y="1968"/>
         </scene>
     </scenes>
     <resources>
@@ -1753,11 +2164,11 @@ Do you have any questions for us?</string>
         <image name="Spike.png" width="200" height="200"/>
         <image name="UnknownOther.png" width="200" height="200"/>
         <image name="Will.png" width="200" height="200"/>
-        <image name="banner_logo.png" width="1080" height="234"/>
+        <image name="banner_logo2.png" width="3600" height="780"/>
         <image name="crosshairs.png" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FUf-gL-TrP"/>
-        <segue reference="506-iS-xGa"/>
+        <segue reference="JM4-kp-cyJ"/>
     </inferredMetricsTieBreakers>
 </document>

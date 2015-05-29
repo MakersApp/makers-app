@@ -13,6 +13,7 @@ class OkViewController: UIViewController {
     var lineDrawer: LineDrawer!
     var linesDrawn = false
     
+    @IBOutlet weak var headerImage: UIImageView!
     var userName: String!
     var teamMember: String!
     
@@ -28,6 +29,7 @@ class OkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.headerImage.alpha = 0.0
         lineDrawer = LineDrawer(passedCtrl: self)
         lineDrawer.processMarkers(lineMarkers)
         userNameLabel.layer.borderWidth = 2
@@ -59,6 +61,16 @@ class OkViewController: UIViewController {
         }
         
         hostHead.image =  UIImage(named: (hostNamestr))
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
+    }
+    
+    func showHeader() {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.headerImage.alpha = 1.0
+            }, completion: nil)
     }
     
     func hitbeacon(){

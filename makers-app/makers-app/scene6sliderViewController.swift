@@ -18,6 +18,11 @@ class Scene6sliderViewController: UIViewController {
     var joinMailingList: Bool!
     
     
+    @IBOutlet weak var headerImage: UIImageView!
+    
+    @IBOutlet var lineMarkers: [UIButton]!
+    var lineDrawer: LineDrawer!
+    var linesDrawn = false
     
     @IBAction func sliderValueChanged(sender: UISlider) {
         currentValue = Int(sender.value)
@@ -27,10 +32,19 @@ class Scene6sliderViewController: UIViewController {
     @IBOutlet weak var visitToday: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineDrawer = LineDrawer(passedCtrl: self)
+        lineDrawer.processMarkers(lineMarkers)
         visitToday.layer.borderWidth = 2
         visitToday.layer.borderColor = UIColor.lightGrayColor().CGColor
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if linesDrawn == false {
+            lineDrawer.drawLines(lineMarkers, durationInSeconds: 5.0)
+            linesDrawn = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +71,16 @@ class Scene6sliderViewController: UIViewController {
     
     func callbackfunc(data:NSDictionary){
    
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
+    }
+    
+    func showHeader() {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.headerImage.alpha = 1.0
+            }, completion: nil)
     }
 
     /*

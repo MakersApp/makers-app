@@ -14,6 +14,8 @@ class Scene4ViewController: UIViewController {
     var lineDrawer: LineDrawer!
     var linesDrawn = false
 
+    @IBOutlet weak var headerImage: UIImageView!
+    
     @IBOutlet weak var welcomeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,16 @@ class Scene4ViewController: UIViewController {
         hostName.text = hostname
         headView.image = UIImage(named: (hostname))
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
+    }
+    
+    func showHeader() {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.headerImage.alpha = 1.0
+            }, completion: nil)
     }
     
     func hitbeaconagain(){
