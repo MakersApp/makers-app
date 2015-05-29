@@ -45,6 +45,10 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("hasAVisit", sender: nil)
     }
     
+    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func submitButton() {
         NewUser(name: nameInput.text, callBack: processResponse)
     }

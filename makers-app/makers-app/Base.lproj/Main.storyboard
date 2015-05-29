@@ -165,6 +165,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="URJ-9i-p61" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0Hb-O9-YbF"/>
                             <constraint firstItem="FMF-l0-dFP" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0b3-3X-wQb"/>
@@ -250,6 +251,9 @@
                                 <exclude reference="6yj-6D-1FK"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gxV-4s-4Af" appends="YES" id="eBD-vC-vgf"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="greetingText" destination="zDo-KT-fm3" id="Z1Q-4i-CmY"/>
@@ -274,6 +278,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gxV-4s-4Af">
+                    <connections>
+                        <action selector="tapScreen:" destination="vXZ-lx-hvc" id="yJC-ME-VXk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1288" y="323"/>
         </scene>
@@ -2196,6 +2205,6 @@ Do you have any questions for us?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FUf-gL-TrP"/>
-        <segue reference="JM4-kp-cyJ"/>
+        <segue reference="506-iS-xGa"/>
     </inferredMetricsTieBreakers>
 </document>
