@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Question1ViewController: UIViewController {
+class Question1ViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var questionForm: UITextView!
     
@@ -16,6 +16,7 @@ class Question1ViewController: UIViewController {
     
     var lineDrawer: LineDrawer!
     var linesDrawn = false
+    var textHasBeenEdited = false
     @IBOutlet var lineMarkers: [UIButton]!
     
     @IBOutlet weak var emailForm: UITextField!
@@ -24,13 +25,19 @@ class Question1ViewController: UIViewController {
     @IBOutlet weak var enjoyedVisit: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionForm.delegate = self
         lineDrawer = LineDrawer(passedCtrl: self)
         lineDrawer.processMarkers(lineMarkers)
         enjoyedVisit.layer.borderWidth = 2
         enjoyedVisit.layer.borderColor = UIColor.lightGrayColor().CGColor
-
-
         // Do any additional setup after loading the view.
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        if textHasBeenEdited == false {
+            textView.text = ""
+            textHasBeenEdited = true
+        }
     }
     
     override func viewDidLayoutSubviews() {
