@@ -61,7 +61,6 @@ class Question1ViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func joinMailingListButton(sender: UIButton) {
-        sender.backgroundColor = UIColor.redColor()
         joinMailingList = true
     }
     

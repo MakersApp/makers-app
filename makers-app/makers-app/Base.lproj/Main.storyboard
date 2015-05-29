@@ -1311,7 +1311,7 @@ Do you have any questions for us?</string>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIW-2w-t9H">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIW-2w-t9H">
                                 <rect key="frame" x="160" y="414" width="280" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="RYM-pk-0Zr"/>
@@ -1335,7 +1335,7 @@ Do you have any questions for us?</string>
                                     <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="J28-8G-1Xe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLA-AC-Isz">
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLA-AC-Isz">
                                 <rect key="frame" x="404" y="448" width="22" height="22"/>
                                 <color key="tintColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -1905,7 +1905,7 @@ Do you have any questions for us?</string>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goodbye!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCN-ZZ-cwF">
                                 <rect key="frame" x="160" y="117" width="280" height="40"/>
-                                <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="0.17000000000000001" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="1ef-Sx-Uii"/>
                                     <constraint firstAttribute="height" constant="40" id="VLG-UG-ozn"/>

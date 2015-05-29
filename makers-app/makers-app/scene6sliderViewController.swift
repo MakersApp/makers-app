@@ -32,6 +32,7 @@ class Scene6sliderViewController: UIViewController {
     @IBOutlet weak var visitToday: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentValue = Int(slider6.value)
         lineDrawer = LineDrawer(passedCtrl: self)
         lineDrawer.processMarkers(lineMarkers)
         visitToday.layer.borderWidth = 2
