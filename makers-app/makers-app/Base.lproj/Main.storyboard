@@ -1594,8 +1594,7 @@ Do you have any questions for us?</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="Jao-Z1-JEA"/>
-                                    <action selector="nextButton:" destination="sEy-d8-ze7" eventType="touchUpInside" id="srf-Jm-9UY"/>
+                                    <action selector="submitForm:" destination="sEy-d8-ze7" eventType="touchUpInside" id="Zvn-WH-hE0"/>
                                     <segue destination="KUD-F9-FbO" kind="custom" identifier="question2segue" customClass="MakersCustomSegue" customModule="makers_app" customModuleProvider="target" id="JM4-kp-cyJ"/>
                                 </connections>
                             </button>
@@ -1617,8 +1616,7 @@ Do you have any questions for us?</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nameSelect:" destination="3v7-Rl-IPB" eventType="touchUpInside" id="1pT-IG-mIC"/>
-                                    <action selector="noThanks:" destination="sEy-d8-ze7" eventType="touchUpInside" id="xhC-hU-MGQ"/>
+                                    <action selector="submitForm:" destination="sEy-d8-ze7" eventType="touchUpInside" id="RJ9-Qn-dUr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGM-yH-ZkF">
@@ -2204,7 +2202,7 @@ Do you have any questions for us?</string>
         <image name="crosshairs.png" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FUf-gL-TrP"/>
+        <segue reference="eGu-9U-AUA"/>
         <segue reference="JM4-kp-cyJ"/>
     </inferredMetricsTieBreakers>
 </document>

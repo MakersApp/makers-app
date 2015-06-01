@@ -14,14 +14,9 @@ class MakersAppViewController: UIViewController {
     var linesDrawn = false
     var viewHeaderImage: UIImageView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
     func drawLines(lineMarkers:[UIButton], durationInSeconds:Double){
         if linesDrawn == false {
-        lineDrawer.drawLines(lineMarkers, durationInSeconds: 6.0)
+        lineDrawer.drawLines(lineMarkers, durationInSeconds: durationInSeconds)
         linesDrawn = true
         }
     }
@@ -42,9 +37,20 @@ class MakersAppViewController: UIViewController {
     
     func showHeader() {
         UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-            self.viewHeaderImage.alpha = 1.0
+            self.viewHeaderImage?.alpha = 1.0
             }, completion: nil)
     }
     
+    func addGreyBorder(object: AnyObject){
+        if let object.layer {
+            object.layer.borderWidth = 2
+            object.layer.borderColor = UIColor.lightGrayColor().CGColor
+        }
+    }
+    
+//    func addGreyBorder(text: UITextField){
+//        text.layer.borderWidth = 2
+//        text.layer.borderColor = UIColor.lightGrayColor().CGColor
+//    }
 
 }

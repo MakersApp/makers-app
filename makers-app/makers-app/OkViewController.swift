@@ -33,8 +33,7 @@ class OkViewController: MakersAppViewController {
     
     func initialFormatting(){
         hideHeaderImage(headerImage)
-        userNameLabel.layer.borderWidth = 2
-        userNameLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
+        addGreyBorder(userNameLabel)
     }
     
     func displayData(data:NSDictionary){

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: MakersAppViewController {
     
     @IBOutlet weak var greetingText: UILabel!
     @IBOutlet weak var headerImage: UIImageView!
@@ -16,45 +16,28 @@ class MainViewController: UIViewController {
     
     var userName: String!
     var teamMember: String!
-    var lineDrawer: LineDrawer!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        lineDrawer = LineDrawer(passedCtrl: self)
+        setUpLineDrawer(lineMarkers)
         initialFormatting()
     }
     
     func initialFormatting(){
-        self.headerImage.alpha = 0.0
+        hideHeaderImage(headerImage)
         greetingText.text = "Who are you meeting?"
-        greetingText.layer.borderWidth = 2
-        greetingText.layer.borderColor = UIColor.lightGrayColor().CGColor
+        addGreyBorder(greetingText)
     }
     
     override func viewDidLayoutSubviews() {
-        lineDrawer.drawLines(lineMarkers, durationInSeconds: 7.0)
+        drawLines(lineMarkers, durationInSeconds: 7.0)
     }
 
     @IBAction func nameSelect(sender: UIButton) {
-        teamMember = sender.currentTitle
-        if (teamMember == "I don't know!") {
-            teamMember = "unknown"
-        }
-        NewVisit(team_member: teamMember, callBack:segueToShowOkPage)
+        NewVisit(team_member: sender.currentTitle!, callBack:segueToShowOkPage)
     }
     
     func segueToShowOkPage(responseData: NSDictionary) {
         performSegueWithIdentifier("showOkPage", sender: nil)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
-    }
-    
-    func showHeader() {
-        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-            self.headerImage.alpha = 1.0
-            }, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

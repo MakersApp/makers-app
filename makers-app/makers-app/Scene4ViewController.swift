@@ -8,22 +8,14 @@
 
 import UIKit
 
-class Scene4ViewController: UIViewController {
+class Scene4ViewController: MakersAppViewController {
     
     @IBOutlet var lineMarkers: [UIButton]!
-    var lineDrawer: LineDrawer!
-    var linesDrawn = false
-
     @IBOutlet weak var headerImage: UIImageView!
-    
     @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        lineDrawer = LineDrawer(passedCtrl: self)
-        lineDrawer.processMarkers(lineMarkers)
-        welcomeLabel.layer.borderWidth = 2
-        welcomeLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
-
+        addGreyBorder(welcomeLabel)
         println("in Scene4ViewController")
         CheckIfCheckedIn(checkinCallback: updateDisplay)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeaconagain", name: "hit beacon again", object: nil)

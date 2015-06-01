@@ -8,29 +8,21 @@
 
 import UIKit
 
-class Question1ViewController: UIViewController, UITextViewDelegate {
+class Question1ViewController: MakersAppViewController, UITextViewDelegate {
     
     @IBOutlet weak var questionForm: UITextView!
-    
     @IBOutlet weak var headerImage: UIImageView!
-    
-    var lineDrawer: LineDrawer!
-    var linesDrawn = false
-    var textHasBeenEdited = false
     @IBOutlet var lineMarkers: [UIButton]!
-    
     @IBOutlet weak var emailForm: UITextField!
-    var joinMailingList: Bool = false
-
     @IBOutlet weak var enjoyedVisit: UILabel!
+    
+    var joinMailingList: Bool = false
+    var textHasBeenEdited = false
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
         questionForm.delegate = self
-        lineDrawer = LineDrawer(passedCtrl: self)
-        lineDrawer.processMarkers(lineMarkers)
-        enjoyedVisit.layer.borderWidth = 2
-        enjoyedVisit.layer.borderColor = UIColor.lightGrayColor().CGColor
-        // Do any additional setup after loading the view.
+        setUpLineDrawer(lineMarkers)
+        addGreyBorder(enjoyedVisit)
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
@@ -41,15 +33,7 @@ class Question1ViewController: UIViewController, UITextViewDelegate {
     }
     
     override func viewDidLayoutSubviews() {
-        if linesDrawn == false {
-            lineDrawer.drawLines(lineMarkers, durationInSeconds: 6.5)
-            linesDrawn = true
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        drawLines(lineMarkers, durationInSeconds: 6.5)
     }
     
     @IBAction func nextButton(sender: UIButton) {
@@ -68,16 +52,6 @@ class Question1ViewController: UIViewController, UITextViewDelegate {
         performSegueWithIdentifier("nothanksSegue", sender: nil)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
-    }
-    
-    func showHeader() {
-        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-            self.headerImage.alpha = 1.0
-            }, completion: nil)
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "question1" {
             var scene6sliderViewController = segue.destinationViewController as! Scene6sliderViewController
@@ -86,16 +60,5 @@ class Question1ViewController: UIViewController, UITextViewDelegate {
             scene6sliderViewController.joinMailingList = joinMailingList
         }
     }
-
-  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
