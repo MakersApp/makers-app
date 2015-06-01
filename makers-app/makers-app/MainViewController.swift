@@ -21,6 +21,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lineDrawer = LineDrawer(passedCtrl: self)
+        initialFormatting()
+    }
+    
+    func initialFormatting(){
         self.headerImage.alpha = 0.0
         greetingText.text = "Who are you meeting?"
         greetingText.layer.borderWidth = 2
@@ -32,16 +36,14 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func nameSelect(sender: UIButton) {
-
         teamMember = sender.currentTitle
-        println(teamMember)
         if (teamMember == "I don't know!") {
             teamMember = "unknown"
         }
-        NewVisit(team_member: teamMember, callBack:processResponse)
+        NewVisit(team_member: teamMember, callBack:segueToShowOkPage)
     }
     
-    func processResponse(responseData: NSDictionary) {
+    func segueToShowOkPage(responseData: NSDictionary) {
         performSegueWithIdentifier("showOkPage", sender: nil)
     }
     

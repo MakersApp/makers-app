@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
             notification.alertAction = "open"
             notification.soundName = UILocalNotificationDefaultSoundName
             UIApplication.sharedApplication().presentLocalNotificationNow(notification)
-            NSNotificationCenter.defaultCenter().postNotificationName("some string", object: self)
+            NSNotificationCenter.defaultCenter().postNotificationName("beacon has been hit", object: self)
             alreadyHitBeacon = true
         } else {
             var notification = UILocalNotification()

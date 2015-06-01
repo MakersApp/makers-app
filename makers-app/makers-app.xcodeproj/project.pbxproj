@@ -17,13 +17,13 @@
 		35124AAB1B160470000BA567 /* UnknownOther.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA21B160470000BA567 /* UnknownOther.png */; };
 		35124AAC1B160470000BA567 /* Will.png in Resources */ = {isa = PBXBuildFile; fileRef = 35124AA31B160470000BA567 /* Will.png */; };
 		35600B251B171A1400B7C421 /* scene6sliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35600B241B171A1400B7C421 /* scene6sliderViewController.swift */; };
-		35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE701B1B15DB3D00978AE0 /* myCustomView.swift */; };
 		35FE701E1B15F1E900978AE0 /* banner_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FE701D1B15F1E900978AE0 /* banner_logo.png */; };
 		8417286C1B1725940098DF70 /* GoodByeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417286B1B1725940098DF70 /* GoodByeViewController.swift */; };
 		841728701B1757070098DF70 /* MakersCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417286F1B1757070098DF70 /* MakersCustomSegue.swift */; };
 		841728721B1758550098DF70 /* crosshairs.png in Resources */ = {isa = PBXBuildFile; fileRef = 841728711B1758550098DF70 /* crosshairs.png */; };
 		841728741B1759110098DF70 /* lineDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841728731B1759110098DF70 /* lineDrawing.swift */; };
 		8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843020091B162F8A00068DAB /* CheckifHasVisit2.swift */; };
+		84656BB21B1CBA7800D8D6BC /* MakersAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */; };
 		84B62B451B1721C400B14087 /* Question1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B62B441B1721C400B14087 /* Question1ViewController.swift */; };
 		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
 		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
@@ -74,13 +74,13 @@
 		35124AA21B160470000BA567 /* UnknownOther.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownOther.png; sourceTree = "<group>"; };
 		35124AA31B160470000BA567 /* Will.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Will.png; sourceTree = "<group>"; };
 		35600B241B171A1400B7C421 /* scene6sliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scene6sliderViewController.swift; sourceTree = "<group>"; };
-		35FE701B1B15DB3D00978AE0 /* myCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCustomView.swift; sourceTree = "<group>"; };
 		35FE701D1B15F1E900978AE0 /* banner_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_logo.png; sourceTree = "<group>"; };
 		8417286B1B1725940098DF70 /* GoodByeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodByeViewController.swift; sourceTree = "<group>"; };
 		8417286F1B1757070098DF70 /* MakersCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakersCustomSegue.swift; sourceTree = "<group>"; };
 		841728711B1758550098DF70 /* crosshairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshairs.png; sourceTree = "<group>"; };
 		841728731B1759110098DF70 /* lineDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lineDrawing.swift; sourceTree = "<group>"; };
 		843020091B162F8A00068DAB /* CheckifHasVisit2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckifHasVisit2.swift; sourceTree = "<group>"; };
+		84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakersAppViewController.swift; sourceTree = "<group>"; };
 		84B62B441B1721C400B14087 /* Question1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question1ViewController.swift; sourceTree = "<group>"; };
 		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
@@ -147,6 +147,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		84656BB31B1CBF8200D8D6BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */,
+				84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */,
+				35600B241B171A1400B7C421 /* scene6sliderViewController.swift */,
+				84B62B441B1721C400B14087 /* Question1ViewController.swift */,
+				8417286B1B1725940098DF70 /* GoodByeViewController.swift */,
+				BF7F39051B10B6D400CAECB3 /* OkViewController.swift */,
+				BFD7A02A1B0E480100DD4346 /* MainViewController.swift */,
+				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84656BB41B1CBFB900D8D6BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				841728731B1759110098DF70 /* lineDrawing.swift */,
+				843020091B162F8A00068DAB /* CheckifHasVisit2.swift */,
+				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
+				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
+				84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */,
+				84C40F1E1B14840600EB6DDB /* CheckIn.swift */,
+				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		94427E2A5191068DE13FEA44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,25 +211,13 @@
 		BFD79FF81B0E247600DD4346 /* makers-app */ = {
 			isa = PBXGroup;
 			children = (
-				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
-				BFD7A02A1B0E480100DD4346 /* MainViewController.swift */,
-				BF7F39051B10B6D400CAECB3 /* OkViewController.swift */,
+				84656BB41B1CBFB900D8D6BC /* Models */,
+				84656BB31B1CBF8200D8D6BC /* ViewControllers */,
+				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0021B0E247600DD4346 /* Main.storyboard */,
 				8417286F1B1757070098DF70 /* MakersCustomSegue.swift */,
 				BFD79FFD1B0E247600DD4346 /* makers_app.xcdatamodeld */,
 				BFD79FF91B0E247600DD4346 /* Supporting Files */,
-				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
-				84C40F1E1B14840600EB6DDB /* CheckIn.swift */,
-				84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */,
-				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
-				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
-				84C40F2A1B14B5D800EB6DDB /* Scene4ViewController.swift */,
-				35FE701B1B15DB3D00978AE0 /* myCustomView.swift */,
-				843020091B162F8A00068DAB /* CheckifHasVisit2.swift */,
-				35600B241B171A1400B7C421 /* scene6sliderViewController.swift */,
-				84B62B441B1721C400B14087 /* Question1ViewController.swift */,
-				8417286B1B1725940098DF70 /* GoodByeViewController.swift */,
-				841728731B1759110098DF70 /* lineDrawing.swift */,
 			);
 			path = "makers-app";
 			sourceTree = "<group>";
@@ -221,7 +238,6 @@
 				35124AA21B160470000BA567 /* UnknownOther.png */,
 				35124AA31B160470000BA567 /* Will.png */,
 				BFE9BA7D1B11E2BE00885EF2 /* ObjCBridge.h */,
-				BFD79FFB1B0E247600DD4346 /* AppDelegate.swift */,
 				BFD7A0051B0E247600DD4346 /* Images.xcassets */,
 				BFD7A0261B0E3A3200DD4346 /* ma2.png */,
 				BFD7A0241B0E394A00DD4346 /* ma.png */,
@@ -430,9 +446,9 @@
 				84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */,
 				BF7F38D01B0F862F00CAECB3 /* HttpManager.swift in Sources */,
 				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
-				35FE701C1B15DB3D00978AE0 /* myCustomView.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
+				84656BB21B1CBA7800D8D6BC /* MakersAppViewController.swift in Sources */,
 				35600B251B171A1400B7C421 /* scene6sliderViewController.swift in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
