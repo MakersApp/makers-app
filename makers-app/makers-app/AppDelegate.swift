@@ -18,47 +18,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
         proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), major: 33613, minor: 1285, identifier: "MakerBeacon")
     
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
-        println("did enter region")
-        if alreadyHitBeacon == false {
-            var notification = UILocalNotification()
-            notification.alertBody = "Welcome"
-            notification.alertAction = "open"
-            notification.soundName = UILocalNotificationDefaultSoundName
-            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
-            NSNotificationCenter.defaultCenter().postNotificationName("beacon has been hit", object: self)
-            alreadyHitBeacon = true
+        if alreadyHitBeacon {
+            NotificationHandler(alertBodyText: "Thanks for visiting")
+            sendInternalNotification("hit beacon again")
         } else {
-            var notification = UILocalNotification()
-            notification.alertBody = "Thanks for visiting"
-            notification.alertAction = "open"
-            notification.soundName = UILocalNotificationDefaultSoundName
-            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
-            NSNotificationCenter.defaultCenter().postNotificationName("hit beacon again", object: self)
+            NotificationHandler(alertBodyText: "Welcome")
+            sendInternalNotification("beacon has been hit")
+            alreadyHitBeacon = true
         }
-    }
-    
-    func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {
-        println("did exit region")
-    }
-    
-    func beaconManager(manager: AnyObject!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        println("STATUS CHANGED: \(status.rawValue)")
-        if status == .AuthorizedAlways{
-            println("YAY! Authorized!")
-        }
-    }
-    
-    func beaconManager(manager: AnyObject!, monitoringDidFailForRegion region: CLBeaconRegion!, withError error: NSError!) {
-        println("failed")
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
+        requestNotificationPermission(application)
+        setupBeacon()
+        return true
+    }
+    
+    func requestNotificationPermission(app:UIApplication){
+        app.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
             UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+    }
+    
+    func setupBeacon(){
         beaconManager.requestAlwaysAuthorization()
         beaconManager.delegate = self
         beaconManager.startMonitoringForRegion(beaconRegion)
-        return true
+    }
+    
+    func sendInternalNotification(message:String){
+        NSNotificationCenter.defaultCenter().postNotificationName(message, object: self)
     }
 
     func applicationWillResignActive(application: UIApplication) {

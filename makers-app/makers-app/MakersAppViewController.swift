@@ -42,15 +42,7 @@ class MakersAppViewController: UIViewController {
     }
     
     func addGreyBorder(object: AnyObject){
-        if let object.layer {
             object.layer.borderWidth = 2
             object.layer.borderColor = UIColor.lightGrayColor().CGColor
-        }
     }
-    
-//    func addGreyBorder(text: UITextField){
-//        text.layer.borderWidth = 2
-//        text.layer.borderColor = UIColor.lightGrayColor().CGColor
-//    }
-
 }

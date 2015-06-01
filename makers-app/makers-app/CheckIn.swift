@@ -10,7 +10,6 @@ import Foundation
 
 class CheckIn{
 
-
     init(){
         let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
         let parameters: [String:String] = ["phone_id":deviceID]

@@ -13,49 +13,29 @@ class Scene4ViewController: MakersAppViewController {
     @IBOutlet var lineMarkers: [UIButton]!
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var hostName: UILabel!
+    @IBOutlet weak var headView: UIImageView!
     
     override func viewDidLoad() {
+        setUpLineDrawer(lineMarkers)
         addGreyBorder(welcomeLabel)
-        println("in Scene4ViewController")
+        hideHeaderImage(headerImage)
         CheckIfCheckedIn(checkinCallback: updateDisplay)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitbeaconagain", name: "hit beacon again", object: nil)
-        // Do any additional setup after loading the view.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitBeaconAgain", name: "hit beacon again", object: nil)
     }
     
     override func viewDidLayoutSubviews() {
-        if linesDrawn == false {
-            lineDrawer.drawLines(lineMarkers, durationInSeconds: 5.5)
-            linesDrawn = true
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        drawLines(lineMarkers, durationInSeconds: 5.5)
     }
     
-    @IBOutlet weak var hostName: UILabel!
-    @IBOutlet weak var headView: UIImageView!
     func updateDisplay(data:NSDictionary){
         let hostname: String = data["team_member"] as! String
         hostName.text = hostname
         headView.image = UIImage(named: (hostname))
-        
     }
     
-    override func viewDidAppear(animated: Bool) {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("showHeader"), userInfo: nil, repeats: true)
-    }
-    
-    func showHeader() {
-        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-            self.headerImage.alpha = 1.0
-            }, completion: nil)
-    }
-    
-    func hitbeaconagain(){
+    func hitBeaconAgain(){
         performSegueWithIdentifier("questionaire", sender: nil)
     }
-
 
 }

@@ -22,13 +22,12 @@ class HttpManager {
     }
   }
 
-  func makePostRequest(address: String, params: [String: String], callBack: AnyObject?){
+  func makePostRequest(address: String, params: [String: String], callBack: ((data: NSDictionary)->())!){
       Alamofire.request(.POST, address, parameters: params)
           .responseJSON { (_, _, JSON, _) in
               if let object = JSON as? NSDictionary {
-                println("hi from rich and james!!")
-                if let cb = callBack as? (NSDictionary)->(){
-                  cb(object)
+                if (callBack != nil) {
+                  callBack(data: object)
                 }
               }
       }

@@ -25,6 +25,7 @@
 		8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843020091B162F8A00068DAB /* CheckifHasVisit2.swift */; };
 		84656BB21B1CBA7800D8D6BC /* MakersAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */; };
 		84656BB61B1CCD6100D8D6BC /* FormSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */; };
+		84656BB81B1CDD4300D8D6BC /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */; };
 		84B62B451B1721C400B14087 /* Question1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B62B441B1721C400B14087 /* Question1ViewController.swift */; };
 		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
 		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
@@ -83,6 +84,7 @@
 		843020091B162F8A00068DAB /* CheckifHasVisit2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckifHasVisit2.swift; sourceTree = "<group>"; };
 		84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakersAppViewController.swift; sourceTree = "<group>"; };
 		84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSubmission.swift; sourceTree = "<group>"; };
+		84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		84B62B441B1721C400B14087 /* Question1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question1ViewController.swift; sourceTree = "<group>"; };
 		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				84C40F1E1B14840600EB6DDB /* CheckIn.swift */,
 				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
 				84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */,
+				84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
 				841728741B1759110098DF70 /* lineDrawing.swift in Sources */,
 				8417286C1B1725940098DF70 /* GoodByeViewController.swift in Sources */,
+				84656BB81B1CDD4300D8D6BC /* NotificationHandler.swift in Sources */,
 				841728701B1757070098DF70 /* MakersCustomSegue.swift in Sources */,
 				8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */,
 			);
