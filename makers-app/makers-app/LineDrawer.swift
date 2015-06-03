@@ -72,7 +72,4 @@ class LineDrawer {
         lineToDraw.addAnimation(animation, forKey: "animate stroke end animation")
         
     }
-    
-    
-    
 }

@@ -16,11 +16,13 @@ class WelcomeViewController: MakersAppViewController {
     @IBOutlet weak var hostName: UILabel!
     @IBOutlet weak var headView: UIImageView!
     
+    let visitManager = VisitManager()
+    
     override func viewDidLoad() {
         setUpLineDrawer(lineMarkers)
         addGreyBorder(welcomeLabel)
         hideHeaderImage(headerImage)
-        CheckIfCheckedIn(checkinCallback: updateDisplay)
+        visitManager.checkIfCheckedIn(updateDisplay)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hitBeaconAgain", name: "hit beacon again", object: nil)
     }
     

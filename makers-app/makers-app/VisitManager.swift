@@ -12,6 +12,7 @@ import UIKit
 class VisitManager{
     
     var address: String!
+    var checkinCallbackToExecute:((NSDictionary)->())!
     let deviceID = UIDevice.currentDevice().identifierForVendor.UUIDString
     let httpManager = HttpManager()
     let rootURL = "https://makersvisitorapi.herokuapp.com/"
@@ -32,30 +33,22 @@ class VisitManager{
         httpManager.makeGetRequest("http://makersvisitorapi.herokuapp.com/visits?phone_id=\(deviceID)", callBack: callBack)
     }
     
-//
-//    var checkinCallbackToExecute:(NSDictionary)->()
-//    
-//    func checkIfCheckedIn(checkinCallback:(NSDictionary)->()){
-//        checkinCallbackToExecute = checkinCallback
-//        address = rootURL + "visits?phone_id=\(deviceID)"
-//        httpManager.makeGetRequest(address, callBack: checkedInCallBack)
-//    }
-//    
-//    func checkedInCallBack(data:NSDictionary){
-//        checkinCallbackToExecute(data)
-//        if data["checkedin"] as! Int == 0 {
-//            println("in if block")
-//            checkIn()
-//        }    
-//    }
-//
-//    func checkIn(){
-//        let parameters: [String:String] = ["phone_id":deviceID]
-//        httpManager.makePatchRequest("http://makersvisitorapi.herokuapp.com/checkin", params: parameters, callBack: nil)
-//    }
+    func checkIfCheckedIn(checkinCallback:(NSDictionary)->()){
+        checkinCallbackToExecute = checkinCallback
+        address = rootURL + "visits?phone_id=\(deviceID)"
+        httpManager.makeGetRequest(address, callBack: checkedInCallBack)
+    }
     
-    
-    
-    
-    
+    func checkedInCallBack(data:NSDictionary){
+        checkinCallbackToExecute(data)
+        if data["checkedin"] as! Int == 0 {
+            println("in if block")
+            checkIn()
+        }    
+    }
+
+    func checkIn(){
+        let parameters: [String:String] = ["phone_id":deviceID]
+        httpManager.makePatchRequest("http://makersvisitorapi.herokuapp.com/checkin", params: parameters, callBack: nil)
+    }
 }

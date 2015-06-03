@@ -41,7 +41,7 @@ class NPSViewController: MakersAppViewController {
     
     @IBAction func submitForm(sender: UIButton) {
         let nps = (sender.currentTitle! == "NEXT" ? "\(currentNPS)" : "skipped")
-        FormSubmission(email: email, nps: nps, question: question, joinMailingList: joinMailingList)
+        FormSubmissionManager().submitForm(email, nps: nps, question: question, joinMailingList: joinMailingList)
         performSegueWithIdentifier("question2segue", sender: nil)
     }
     

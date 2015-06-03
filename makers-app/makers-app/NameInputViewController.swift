@@ -15,6 +15,7 @@ class NameInputViewController: MakersAppViewController {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet var lineMarkersOne: [UIButton]!
     @IBOutlet var lineMarkersTwo: [UIButton]!
+    
     let visitManager = VisitManager()
     
     override func viewDidLoad() {
@@ -44,7 +45,7 @@ class NameInputViewController: MakersAppViewController {
     }
     
     @IBAction func submitButton() {
-        NewUser(name: nameInput.text, callBack: processResponse)
+        visitManager.newUser(nameInput.text, callBack: processResponse)
     }
     
     func processResponse(responseData: NSDictionary) {
