@@ -21,11 +21,18 @@
 		8417286C1B1725940098DF70 /* GoodByeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417286B1B1725940098DF70 /* GoodByeViewController.swift */; };
 		841728701B1757070098DF70 /* MakersCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417286F1B1757070098DF70 /* MakersCustomSegue.swift */; };
 		841728721B1758550098DF70 /* crosshairs.png in Resources */ = {isa = PBXBuildFile; fileRef = 841728711B1758550098DF70 /* crosshairs.png */; };
-		841728741B1759110098DF70 /* lineDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841728731B1759110098DF70 /* lineDrawing.swift */; };
+		8424F83F1B1E236B0009C7CC /* NameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F83E1B1E236B0009C7CC /* NameInputViewController.swift */; };
+		8424F8411B1E24510009C7CC /* StaffSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F8401B1E24510009C7CC /* StaffSelectViewController.swift */; };
+		8424F8431B1E24BA0009C7CC /* VisitConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F8421B1E24BA0009C7CC /* VisitConfirmationViewController.swift */; };
+		8424F8451B1E25240009C7CC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F8441B1E25240009C7CC /* WelcomeViewController.swift */; };
+		8424F8471B1E25760009C7CC /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F8461B1E25760009C7CC /* FeedBackViewController.swift */; };
+		8424F8491B1E25B10009C7CC /* NPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F8481B1E25B10009C7CC /* NPSViewController.swift */; };
+		8424F84B1B1E26FA0009C7CC /* VisitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424F84A1B1E26FA0009C7CC /* VisitManager.swift */; };
 		8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843020091B162F8A00068DAB /* CheckifHasVisit2.swift */; };
 		84656BB21B1CBA7800D8D6BC /* MakersAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */; };
 		84656BB61B1CCD6100D8D6BC /* FormSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */; };
 		84656BB81B1CDD4300D8D6BC /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */; };
+		848C30411B1F5CEA0036962D /* LineDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C30401B1F5CEA0036962D /* LineDrawer.swift */; };
 		84B62B451B1721C400B14087 /* Question1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B62B441B1721C400B14087 /* Question1ViewController.swift */; };
 		84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F1E1B14840600EB6DDB /* CheckIn.swift */; };
 		84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */; };
@@ -80,11 +87,18 @@
 		8417286B1B1725940098DF70 /* GoodByeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodByeViewController.swift; sourceTree = "<group>"; };
 		8417286F1B1757070098DF70 /* MakersCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakersCustomSegue.swift; sourceTree = "<group>"; };
 		841728711B1758550098DF70 /* crosshairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshairs.png; sourceTree = "<group>"; };
-		841728731B1759110098DF70 /* lineDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lineDrawing.swift; sourceTree = "<group>"; };
+		8424F83E1B1E236B0009C7CC /* NameInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameInputViewController.swift; sourceTree = "<group>"; };
+		8424F8401B1E24510009C7CC /* StaffSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffSelectViewController.swift; sourceTree = "<group>"; };
+		8424F8421B1E24BA0009C7CC /* VisitConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitConfirmationViewController.swift; sourceTree = "<group>"; };
+		8424F8441B1E25240009C7CC /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8424F8461B1E25760009C7CC /* FeedBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
+		8424F8481B1E25B10009C7CC /* NPSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSViewController.swift; sourceTree = "<group>"; };
+		8424F84A1B1E26FA0009C7CC /* VisitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitManager.swift; sourceTree = "<group>"; };
 		843020091B162F8A00068DAB /* CheckifHasVisit2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckifHasVisit2.swift; sourceTree = "<group>"; };
 		84656BB11B1CBA7800D8D6BC /* MakersAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakersAppViewController.swift; sourceTree = "<group>"; };
 		84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSubmission.swift; sourceTree = "<group>"; };
 		84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		848C30401B1F5CEA0036962D /* LineDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDrawer.swift; sourceTree = "<group>"; };
 		84B62B441B1721C400B14087 /* Question1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question1ViewController.swift; sourceTree = "<group>"; };
 		84C40F1E1B14840600EB6DDB /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		84C40F201B14864200EB6DDB /* CheckIfCheckedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckIfCheckedIn.swift; sourceTree = "<group>"; };
@@ -162,6 +176,12 @@
 				BF7F39051B10B6D400CAECB3 /* OkViewController.swift */,
 				BFD7A02A1B0E480100DD4346 /* MainViewController.swift */,
 				BFD7A0001B0E247600DD4346 /* ViewController.swift */,
+				8424F83E1B1E236B0009C7CC /* NameInputViewController.swift */,
+				8424F8401B1E24510009C7CC /* StaffSelectViewController.swift */,
+				8424F8421B1E24BA0009C7CC /* VisitConfirmationViewController.swift */,
+				8424F8441B1E25240009C7CC /* WelcomeViewController.swift */,
+				8424F8461B1E25760009C7CC /* FeedBackViewController.swift */,
+				8424F8481B1E25B10009C7CC /* NPSViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -169,7 +189,6 @@
 		84656BB41B1CBFB900D8D6BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				841728731B1759110098DF70 /* lineDrawing.swift */,
 				843020091B162F8A00068DAB /* CheckifHasVisit2.swift */,
 				84C40F261B14A6F900EB6DDB /* NewUser.swift */,
 				84C40F241B14A54A00EB6DDB /* NewVisit.swift */,
@@ -178,6 +197,8 @@
 				BF7F38CF1B0F862E00CAECB3 /* HttpManager.swift */,
 				84656BB51B1CCD6100D8D6BC /* FormSubmission.swift */,
 				84656BB71B1CDD4300D8D6BC /* NotificationHandler.swift */,
+				8424F84A1B1E26FA0009C7CC /* VisitManager.swift */,
+				848C30401B1F5CEA0036962D /* LineDrawer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -448,6 +469,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7A0011B0E247600DD4346 /* ViewController.swift in Sources */,
+				8424F84B1B1E26FA0009C7CC /* VisitManager.swift in Sources */,
+				8424F8411B1E24510009C7CC /* StaffSelectViewController.swift in Sources */,
+				8424F8491B1E25B10009C7CC /* NPSViewController.swift in Sources */,
+				8424F8471B1E25760009C7CC /* FeedBackViewController.swift in Sources */,
 				84C40F211B14864200EB6DDB /* CheckIfCheckedIn.swift in Sources */,
 				84C40F2B1B14B5D800EB6DDB /* Scene4ViewController.swift in Sources */,
 				84656BB61B1CCD6100D8D6BC /* FormSubmission.swift in Sources */,
@@ -455,18 +480,21 @@
 				84C40F1F1B14840600EB6DDB /* CheckIn.swift in Sources */,
 				BF7F39061B10B6D400CAECB3 /* OkViewController.swift in Sources */,
 				BFD79FFF1B0E247600DD4346 /* makers_app.xcdatamodeld in Sources */,
+				848C30411B1F5CEA0036962D /* LineDrawer.swift in Sources */,
+				8424F8451B1E25240009C7CC /* WelcomeViewController.swift in Sources */,
 				84656BB21B1CBA7800D8D6BC /* MakersAppViewController.swift in Sources */,
 				35600B251B171A1400B7C421 /* scene6sliderViewController.swift in Sources */,
 				BFD79FFC1B0E247600DD4346 /* AppDelegate.swift in Sources */,
 				BFD7A02B1B0E480100DD4346 /* MainViewController.swift in Sources */,
 				84C40F271B14A6F900EB6DDB /* NewUser.swift in Sources */,
 				84B62B451B1721C400B14087 /* Question1ViewController.swift in Sources */,
+				8424F8431B1E24BA0009C7CC /* VisitConfirmationViewController.swift in Sources */,
 				84C40F251B14A54A00EB6DDB /* NewVisit.swift in Sources */,
-				841728741B1759110098DF70 /* lineDrawing.swift in Sources */,
 				8417286C1B1725940098DF70 /* GoodByeViewController.swift in Sources */,
 				84656BB81B1CDD4300D8D6BC /* NotificationHandler.swift in Sources */,
 				841728701B1757070098DF70 /* MakersCustomSegue.swift in Sources */,
 				8430200A1B162F8A00068DAB /* CheckifHasVisit2.swift in Sources */,
+				8424F83F1B1E236B0009C7CC /* NameInputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

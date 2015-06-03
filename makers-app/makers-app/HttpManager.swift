@@ -33,12 +33,14 @@ class HttpManager {
       }
   }
   
-  func makePatchRequest(address: String, params: [String: String], callBack: (data: NSDictionary)->()){
+  func makePatchRequest(address: String, params: [String: String], callBack: ((data: NSDictionary)->())!){
       Alamofire.request(.PATCH, address, parameters: params)
-        .responseJSON { (_, _, JSON, _) in
-          if let object = JSON as? NSDictionary {
-            callBack(data: object)
-          }
-      }
+          .responseJSON { (_, _, JSON, _) in
+            if let object = JSON as? NSDictionary {
+              if (callBack != nil) {
+                callBack(data: object)
+              }
+            }
+    }
   }
 }

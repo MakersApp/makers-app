@@ -16,8 +16,8 @@ class MakersAppViewController: UIViewController {
 
     func drawLines(lineMarkers:[UIButton], durationInSeconds:Double){
         if linesDrawn == false {
-        lineDrawer.drawLines(lineMarkers, durationInSeconds: durationInSeconds)
-        linesDrawn = true
+            lineDrawer.drawLines(lineMarkers, durationInSeconds: durationInSeconds)
+            linesDrawn = true
         }
     }
     

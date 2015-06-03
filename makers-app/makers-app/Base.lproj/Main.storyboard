@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Name Input View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="NameInputViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -286,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="1288" y="323"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Staff Select View Controller-->
         <scene sceneID="PQo-Px-MiK">
             <objects>
-                <viewController id="3v7-Rl-IPB" customClass="MainViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3v7-Rl-IPB" customClass="StaffSelectViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4kx-Lu-pAu"/>
                         <viewControllerLayoutGuide type="bottom" id="6m8-5m-5eI"/>
@@ -741,10 +741,10 @@
             </objects>
             <point key="canvasLocation" x="2063" y="14"/>
         </scene>
-        <!--Ok View Controller-->
+        <!--Visit Confirmation View Controller-->
         <scene sceneID="e1X-Ag-FvT">
             <objects>
-                <viewController id="p9s-gp-JIt" customClass="OkViewController" customModule="makers_app" sceneMemberID="viewController">
+                <viewController id="p9s-gp-JIt" customClass="VisitConfirmationViewController" customModule="makers_app" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oxt-CQ-aCn"/>
                         <viewControllerLayoutGuide type="bottom" id="kHg-yJ-gnV"/>
@@ -987,10 +987,10 @@
             </objects>
             <point key="canvasLocation" x="2880" y="291"/>
         </scene>
-        <!--Scene4 View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="3PF-Gv-6Mf">
             <objects>
-                <viewController storyboardIdentifier="Scene4ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcM-Cf-3ZU" customClass="Scene4ViewController" customModule="makers_app" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scene4ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcM-Cf-3ZU" customClass="WelcomeViewController" customModule="makers_app" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kbp-2y-SAG"/>
                         <viewControllerLayoutGuide type="bottom" id="1y7-ER-zCL"/>
@@ -1262,10 +1262,10 @@
             </objects>
             <point key="canvasLocation" x="667" y="1069"/>
         </scene>
-        <!--Question1 View Controller-->
+        <!--Feed Back View Controller-->
         <scene sceneID="YYC-Lc-gpb">
             <objects>
-                <viewController id="VCQ-u9-mE6" customClass="Question1ViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VCQ-u9-mE6" customClass="FeedBackViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jh6-By-SYv"/>
                         <viewControllerLayoutGuide type="bottom" id="hbO-tx-Nt1"/>
@@ -1533,10 +1533,10 @@ Do you have any questions for us?</string>
             </objects>
             <point key="canvasLocation" x="1443" y="1069"/>
         </scene>
-        <!--Scene 6slider View Controller-->
+        <!--View Controller-->
         <scene sceneID="p78-ob-SJI">
             <objects>
-                <viewController id="sEy-d8-ze7" customClass="Scene6sliderViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sEy-d8-ze7" customClass="NPSViewController" customModule="makers_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5MF-AJ-qtZ"/>
                         <viewControllerLayoutGuide type="bottom" id="KOV-w6-mYP"/>
